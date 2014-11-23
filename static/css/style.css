@@ -915,7 +915,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .header-19-sub {
   padding-top: 340px;
   padding-bottom: 200px;
-  background: #3f435f;
+  background: #76fdda;
   overflow: hidden;
   position: relative;
 }
@@ -930,6 +930,8 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   bottom: 0;
   max-width: none;
   height: 70%;
+    margin-right: 10px;
+margin-bottom: 30px;
 }
 .header-19-sub > .container {
   position: relative;
@@ -1049,6 +1051,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #bdc3c7;
   overflow: hidden;
   padding: 80px 0;
+    background-color: #40c4ff;
 }
 @media (max-width: 767px) {
   .content-22 {
@@ -1433,7 +1436,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   display: block;
 }
 .content-36 {
-  background-image: url("http://i.imgur.com/wt4NRqA.jpg");
+  background: #ff6e40;
     opacity: 50%;
   text-align: center;
   color: #95a5a6;
@@ -2004,6 +2007,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   position: relative;
   padding-top: 130px;
   padding-bottom: 130px;
+    background-color: #3f51b5;
 }
 @media (max-width: 480px) {
   .content-30 {
