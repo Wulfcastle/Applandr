@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Components &middot; Flat UI Free</title>
+    <title>Components &middot; Vue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -23,20 +23,20 @@
   </head>
   <body>
     <ul class="demo-sidebar hide-on-tablets">
-      <li><a href="#fui-button">Buttons</a></li>
-      <li><a href="#fui-checkbox">Checkboxes</a></li>
-      <li><a href="#fui-radio">Radio buttons</a></li>
-      <li><a href="#fui-dropdown">Dropdown</a></li>
-      <li><a href="#fui-input">Input</a></li>
-      <li><a href="#fui-navbar">Navbar</a></li>
-      <li><a href="#fui-pager">Pager</a></li>
-      <li><a href="#fui-pagination">Pagination</a></li>
-      <li><a href="#fui-progress">Progress</a></li>
-      <li><a href="#fui-select">Select</a></li>
-      <li><a href="#fui-switch">Switch</a></li>
-      <li><a href="#fui-tagsinput">Tags Input</a></li>
-      <li><a href="#fui-tooltip">Tooltip</a></li>
-      <li><a href="#fui-slider">Slider</a></li>
+      <li><a href="#fui-button">Header</a></li>
+      <li><a href="#fui-checkbox">Slider</a></li>
+      <li><a href="#fui-radio">Selecter</a></li>
+      <li><a href="#fui-dropdown">Navigation</a></li>
+      <li><a href="#fui-input">Cards</a></li> <!-- Expand on -->
+      <li><a href="#fui-navbar">Crew</a></li>
+      <li><a href="#fui-pager">Pricing Tables</a></li>
+      <li><a href="#fui-pagination">Form</a></li>
+      <li><a href="#fui-progress">Switcher</a></li>
+      <li><a href="#fui-select">Feature List</a></li>
+      <li><a href="#fui-switch">Content-Block-1</a></li>
+      <li><a href="#fui-tagsinput">Content-Block-2</a></li>
+      <li><a href="#fui-tooltip">Content-Block-3</a></li>
+      <li><a href="#fui-slider">Banner</a></li>
       <li><a href="#fui-typeahead">Typeahead</a></li>
     </ul> <!-- /nav -->
 
@@ -46,92 +46,52 @@
 
       <div class="demo-row">
         <div class="demo-title">
-          <h3>Buttons</h3>
+          <h3>Header</h3>
         </div>
 
         <div class="demo-content">
           <p>
-            After restyling the <a href="http://getbootstrap.com/css/#buttons">Bootstrap buttons</a>, we have decided to add a new size: <code>btn-hg</code> which will be used for the main call to action buttons on the page:
+            To get the current header use the following code
           </p>
-          <p class="mbl">
-            <button class="btn btn-hg btn-primary">Huge Button</button>
-          </p>
+          
+
+
+          
 <pre class="prettyprint">
-&lt;button class="btn btn-hg btn-primary"&gt;
-  Boss Button
-&lt;/button&gt;
+&lt;section class="header-19-sub"&gt;
+    &lt;div class="background"&gt;&nbsp;&lt;/div&gt;
+    &lt;img class="hidden-xs" src="static/img/header/materialcalc.gif" alt=""&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-sm-7"&gt;
+                &lt;h1&gt;Introducing Vue. The Landing Page, that makes your app gorgeous&lt;/h1&gt;
+                &lt;p&gt;What is Vue? Vue is an app landing page inspired by the recent release of Google's Material Design. Vue tightly integrates with Material Design to bring your app's landing page a look and feel that is far ahead of the current web design standards. Material Design is the next big trend in web design and Vue is the first to bring you it.&lt;/p&gt;
+                &lt;div class="btns"&gt;
+                    &lt;a class="btn btn-primary" style="border: 2px solid #52A0AE;" href="#"&gt;&lt;span&gt;Buy Now&lt;/span&gt;&lt;/a&gt;
+                    &lt;a class="btn btn-primary" href="#"&gt;&lt;span class="fui-android"&gt; &lt;/span&gt;&lt;span&gt;Buy in Google Play&lt;/span&gt;&lt;/a&gt;
+                    &lt;a class="btn btn-primary" href="#"&gt;&lt;span class="fui-apple"&gt; &lt;/span&gt;&lt;span&gt;Buy in Google Apple&lt;/span&gt;&lt;/a&gt;
+                    &lt;a class="btn btn-primary" href="#"&gt;&lt;span class="fui-microsoft"&gt; &lt;/span&gt; &lt;span&gt;Buy in Microsoft Market&lt;/span&gt;&lt;/a&gt;
+                    &lt;a class="btn btn-primary" href="#"&gt;&lt;span class="fui-ovi"&gt; &lt;/span&gt;&lt;span&gt;Buy in Ovi&lt;/span&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 </pre>
 
-          <p class="ptl">
-            In addition, we have added <code>btn-embossed</code> to make buttons look more realistic, but we still prefer them flat.
-          </p>
-          <p class="mbl">
-            <button class="btn btn-embossed btn-primary">Embossed Button</button>
-          </p>
-<pre class="prettyprint">
-&lt;button class="btn btn-embossed btn-primary"&gt;
-  Embossed Button
-&lt;/button&gt;
-</pre>
+        
+          
 
-          <p class="ptl">
-            In some cases buttons need to become wider. Yes, we have taken care of that as well:
-          </p>
-          <p class="mbl">
-            <button class="btn btn-wide btn-primary mrm">Save</button>
-            <button class="btn btn-wide btn-default">Cancel</button>
-          </p>
-<pre class="prettyprint">
-&lt;button class="btn btn-default btn-wide"&gt;
-  Cancel
-&lt;/button&gt;
-</pre>
-
-          <p class="ptl">
-            Another new thing is <code>btn-tip</code>. Use it when you need to highlight a part of the button text:
-          </p>
-          <p class="mbl">
-            <button class="btn btn-primary">
-              Save
-              <span class="btn-tip">$300</span>
-            </button>
-          </p>
-<pre class="prettyprint">
-&lt;button class="btn btn-primary"&gt;
-  Save
-  &lt;span class="btn-tip"&gt;$300&lt;/span&gt;
-&lt;/button&gt;
-</pre>
-
-          <p class="ptl">
-            As usual you can set different colors:
-          </p>
-          <p>
-	          <button class="btn btn-default mrs">Default</button>
-            <button class="btn btn-primary mrs">Primary</button>
-            <button class="btn btn-info mrs">Info</button>
-            <button class="btn btn-danger mrs">Danger</button>
-          </p>
-          <p class="mbl">
-            <button class="btn btn-success mrs">Success</button>
-            <button class="btn btn-warning mrs">Warning</button>
-            <button class="btn btn-inverse mrs">Inverse</button>
-          </p>
-<pre class="prettyprint">
-&lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
-&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
-&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
-&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn btn-inverse"&gt;Inverse&lt;/button&gt;
-</pre>
+          
+         
+          
 
           <p>
             Button groups, toolbars, and disabled state also work as expected.
           </p>
         </div>
-      </div><!-- /.demo-row -->
+</div><!-- /.demo-row -->
 
 			<div id="fui-checkbox" class="pbl"></div>
 
@@ -315,86 +275,65 @@ $(':radio').on('toggle', function() {
 
       <div class="demo-row">
         <div class="demo-title">
-          <h3>Dropdown</h3>
+          <h3>Navigation</h3>
         </div>
 
         <div class="demo-content">
           <p class="mbl">
-            The same <a href="http://getbootstrap.com/components/#dropdowns">Bootstrap dropdown</a> is used as a part of the <code>select</code>, <code>btn-group</code>, <code>nav-tabs</code> and eventually other components to present information as a menu.
+            The navigation is a critical aspect of Vue as it is the main method of moving between seperate sections of the site, and it also holds portions of the header, for example the logo and branding are contained within the navivation.
           </p>
-
-          <p class="mbl">
-            Notice <code>dropdown-arrow</code>, which is needed when you want to add a small triangle that visually connects the clickable element with the dropdown menu.
-          </p>
-
-          <select name="info" class="mbn">
-            <optgroup label="Profile">
-              <option value="0">My Profile</option>
-              <option value="1">My Friends</option>
-            </optgroup>
-            <optgroup label="System">
-              <option value="2">Messages</option>
-              <option value="3">My Settings</option>
-              <option value="4" class="highlighted">Logout</option>
-            </optgroup>
-          </select>
 
           <hr/>
 
-          <div class="row">
-          	<div class="col-md-3">
-	          	<div class="dropdown">
-		          	<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
-							  <span class="dropdown-arrow dropdown-arrow-inverse"></span>
-		            <ul class="dropdown-menu dropdown-inverse">
-		              <li><a href="#fakelink">Sub Menu Element</a></li>
-		              <li><a href="#fakelink">Sub Menu Element</a></li>
-		              <li><a href="#fakelink">Sub Menu Element</a></li>
-		            </ul>
-							</div>
-          	</div>
-          </div>
 
 
           <div class="pvl">
 <pre class="prettyprint">
-&lt;!-- Default look --&gt;
-&lt;div class="dropdown"&gt;
-  &lt;button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;
-  &lt;span class="dropdown-arrow"&gt;&lt;/span&gt;
-  &lt;ul class="dropdown-menu"&gt;
-    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
-  &lt;/u&gt;
-&lt;/div&gt;
+&lt;header class="header-19"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="navbar col-sm-12" role="navigation"&gt;
+                &lt;div class="navbar-header"&gt;
+                    &lt;button type="button" class="navbar-toggle"&gt;&lt;/button&gt;
+                    &lt;a class="brand" href="#"&gt;
+                        &lt;img src="static/favicon.png" width="50" height="50" alt=""&gt; &lt;span&gt;Vue - A Material Design App Landing Page&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="navbar-collapse collapse"&gt;
+                    &lt;ul class="nav"&gt;
+                        &lt;li class="active"&gt;&lt;a href="#"&gt;HOME&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;WORK&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;BLOG&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="subnav"&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Privacy&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Terms&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Advertise&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Affiliates&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Newsletter&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
 
-&lt;!-- Inverse look --&gt;
-&lt;div class="dropdown"&gt;
-  &lt;button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;
-  &lt;span class="dropdown-arrow dropdown-arrow-inverse"&gt;&lt;/span&gt;
-  &lt;ul class="dropdown-menu dropdown-inverse"&gt;
-    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
-  &lt;/u&gt;
-&lt;/div&gt;
 </pre>
           </div>
 
           <p>
-            To highlight the information we added 2 additional states for the dropdown-menu items: <code>selected</code> and <code>highlighted</code>:
+            To edit the branding/logo, you have to edit this portion of code within the navbar
           </p>
 <pre class="prettyprint">
-&lt;ul class="dropdown-menu"&gt;
-  &lt;li class="selected"&gt;
-    &lt;a href="#"&gt;Item&lt;/a&gt;
-  &lt;/li&gt;
-
-  &lt;li class="highlighted"&gt;
-    &lt;a href="#"&gt;Item&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="navbar-header"&gt;
+                    &lt;button type="button" class="navbar-toggle"&gt;&lt;/button&gt;
+                    &lt;a class="brand" href="#"&gt;
+                        &lt;img src="static/favicon.png" width="50" height="50" alt=""&gt; &lt;span&gt;Vue - A Material Design App Landing Page&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
 </pre>
         </div> <!-- /.demo-content -->
       </div> <!-- /.demo-row -->
