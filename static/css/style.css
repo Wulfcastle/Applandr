@@ -905,7 +905,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .header-19 .navbar .navbar-toggle {
   display: block;
-  background-image: url("../../startup/common-files/icons/menu-icon-dark@2x.png");
+  background-image: url("../../startup/common-files/icons/menu-icon@2x.png");
   -webkit-background-size: 17px 12px;
   -moz-background-size: 17px 12px;
   -o-background-size: 17px 12px;
@@ -949,8 +949,9 @@ margin-bottom: 30px;
 .header-19-sub .btn {
   padding-left: 18px;
   padding-right: 18px;
-  background: #52A0AE;
+  background: none;
   font-weight: bold;
+  color: #52A0AE;
 }
 .header-19-sub .btns {
   margin-top: 55px;
@@ -1064,7 +1065,7 @@ margin-bottom: 30px;
   font-size: 30px;
   font-weight: normal;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 40px 0;
   font-weight: 300;
 }
@@ -1078,7 +1079,7 @@ margin-bottom: 30px;
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   text-transform: none;
 }
@@ -1086,7 +1087,7 @@ margin-bottom: 30px;
   font-size: 18px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.55);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 50px;
 }
 .content-22 .col-sm-8 {
@@ -1102,7 +1103,7 @@ margin-bottom: 30px;
   font-size: 14px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   max-width: 220px;
   background: url("../../startup/common-files/img/content/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
@@ -1256,11 +1257,11 @@ margin-bottom: 30px;
   box-sizing: border-box;
   padding: 7px 26px 8px;
   background: none;
-  border: 2px solid #2ecc71;
+  border: 2px solid #fff;
   font-size: 14px;
-  font-weight: normal;
-  color: #2ecc71;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 .content-22 .btn.btn-clear:hover,
