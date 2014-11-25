@@ -537,7 +537,7 @@ startupKit.uiKitHeader.header18 = function() {
 
 /* Header 19*/
 startupKit.uiKitHeader.header19 = function() {
-    startupKit.uiKitHeader._inFixedMode('.header-19');
+    startupKit.uiKitHeader._inFixedMode('.header');
 };
 
 /* Header 20*/
