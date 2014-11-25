@@ -19,7 +19,7 @@
    <body>
       <ul class="demo-sidebar hide-on-tablets">
          <li><a href="#header">Header</a></li>
-         <li><a href="#slider">Slider</a></li>
+         <li><a href="#sliders">Slider</a></li>
          <li><a href="#selector">Selector</a></li>
          <li><a href="#navigation">Navigation</a></li>
          <li><a href="#cards">Cards</a></li>  <!-- Expand on -->
@@ -32,6 +32,7 @@
          <li><a href="#content-block-2">Content-Block-2</a></li>
          <li><a href="#content-block-3">Content-Block-3</a></li>
          <li><a href="#banner">Banner</a></li>
+          <li><a href="#mockups">Mockups</a></li>
 
       </ul>
       <!-- /nav -->
@@ -77,7 +78,7 @@
           
           
           
-          <div id="slider" class="pbl"></div>
+          <div id="sliders" class="pbl"></div>
          <div class="demo-row">
             <div class="demo-title">
                <h3>Slider</h3>
@@ -233,6 +234,13 @@
                <p>
                   The "Selector" is one of the critical components of showing off your interface. Take note that to receive the black &amp; white -> colour effect, you'll need both a black &amp; white version plus a colour version of your image, as the image is changed from the black and white version to the colour image, once it is hovered upon. 
                </p>
+                <br>
+                <p>Remember to have both black and white versions of your image: </p>
+                
+                <img src="images/shots/4.PNG" alt=""><img>
+                <br><br>
+                
+            
                <pre class="prettyprint">
 &lt;section class=&quot;content-30&quot;&gt;
     &lt;div class=&quot;container&quot;&gt;
@@ -383,8 +391,33 @@
                <h3>Cards</h3>
             </div>
             <div class="demo-content">
+                <p>
+                  Firstly before moving any further with the "Cards" component it is important to know how to edit the cards themselves. To modify the Cards we have provided a simple mockup .PSD which you can use to make your own changes.
+               </p>
+                
+                <h4> Step 1. Open the .PSD</h4>
+                <p>The .PSD file for the mockup is located in <code>resources/cards/Mockup.PSD</code>. Once you find it open it up in Photoshop. Remember .PSD files can only be opened up by Photoshop.</p>
+                <br>
+                <br>
+                <h4> Step 2. Familiarize Yourself</h4>
+                <p>Once you open up the .PSD, take a look at the layers panel, you will see two different items. Item 1 is a Smart Object named <code>Click Me to Edit</code> and Item 2 is a folder named <code>Slide</code>. To edit the .PSD all you need to do is edit Item 1 as the name suggests. Take note not to edit or edit change any of the layers within <code>Slide</code> as it will result in defects with the rendered image</p>
+                <img src ="images/shots/1.png" alt=""><img>
+                <br>
+                <br>
+                <h4> Step 3. Time to Edit</h4>
+                <p>Now that you've familiarised yourself with the .PSD, open up the <code>Click Me to Edit</code> Smart Object. You will be taking to a new screen with a name <code>Untitled-1.psb</code>, take note of the .PSB extenstion, this shows that this is a Smart Object and therefore it has to be saved to reflect any changes in the .PSD file. Now, you can just insert your image over the current layer and save the file to see the changes in the original .PSD file. Also take note that you may have to re-crop the Smart Object to allow your image to display fully in it.
+                <br>
+                <br>
+                    
+                <h4> Step 4. Time to Save</h4>
+                <p>Once you've saved the Smart Object and can see the changes in the .PSD, now you can export your image with our Card style and use it in your website. To do this simply click <code>File</code>, then <code>Save for Web</code>. Once that's done you just need to link them in your <code>index.html</code> for them to show up on your site. (Or if you have saved them over the current Cards being used, just make sure that they are positioned correctly.)
+                <br>
+                <br>
+
+                
+                
                <p>
-                  To get the "Cards" component use the following code:
+                  To get the "Cards" component in your website use the following code:
                </p>
                <pre class="prettyprint">
 &lt;section class=&quot;content-22 bg-midnight-blue ani-processed&quot;&gt;
@@ -955,6 +988,49 @@
             </div>
          </div>
          <!-- /.demo-row -->
+          
+          <div id="mockups" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Mockups</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  Vue comes along with over 20+ flat-styled Smartphone mockups to display your app. The best from Android, Apple and Windows Phone. This guide will tell you how to edit the .PSD mockups so that you can display your own app within those Smartphones.
+               </p>
+                <br><br>
+                <p>
+                  For the purposes of this tutorial we will be using the <code>Samsung Galaxy S4.psd</code> mockup, however all of the .PSD mockups are built with the same structure therefore whatever we do in this tutorial can be replicated with any other mockup.
+               </p>
+                
+                <img src="images/shots/2.png" alt=""><img>
+                <br><br>
+                <br><br>
+                <p>
+                  Step 1. Choose your Smartphone Mockup
+                All 20+ of the mockups are located in <code>resources/mockups/</code>. Once you open that directory you will see respective sub-directories where the mockups are located. Open up a mockup of your choice and lets get started.
+               </p>
+                <br><br>
+                <p>
+                  Step 2 : Familiarize Yourself
+                As mentioned earlier, all of the .PSD mockups are built with the same structure therefore whatever we do in this tutorial can be replicated with any other mockup. Take a look at the layers panel. You will notice that there will be two items there. Item 1 will always be either a Smart Object or Folder and Item 2 will always be a Background (which you can delete if needed). 
+               </p>
+                <img src="images/shots/3.png" alt=""><img>
+                <br><br>
+                <br><br>
+                <p>
+                  Step 3 : Start Editing
+                To edit the smartphone you need to open up Item 1 in the layers panel, the Smart Object or Folder. Once you double-click on that you will be taken to a new screen to edit the Smart Object. Look for the <code>"Screen"</code> layer which is shown by a #7d7d7d solid color. That is the layer you need to edit in order to show your app on the smartphone. Simply insert your image on top of the <code>"Screen"</code> layer, save the changes and you will see the smartphone will now display your app/image.
+               </p>
+                <br><br>
+                <p>
+                  Step 4 : Saving 
+                Once you've edit the mockup, you now need to export and save the mockup as a .PNG file for use in your site. To do this simply click <code>File</code>, <code>Save for Web</code> and save the image. Preferrably try to save the image into <code>static/img/content/</code> to keep a clean structuring of your files. Once you've saved it, then simply link it in your <code>index.html</code> file to display it in your website.
+               </p>
+              <br><br>
+
+            </div>
+         </div>
         
        </div> <!-- Container -->
          
@@ -968,8 +1044,6 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="js/bootstrap-select.js"></script>
       <script src="js/bootstrap-switch.js"></script>
-      <script src="js/flatui-checkbox.js"></script>
-      <script src="js/flatui-radio.js"></script>
       <script src="js/jquery.tagsinput.js"></script>
       <script src="js/jquery.placeholder.js"></script>
       <script src="js/typeahead.js"></script>
