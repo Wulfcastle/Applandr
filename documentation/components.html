@@ -1,63 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Components &middot; Vue</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/prettify.css" rel="stylesheet">
-
-
-    <link href="css/components.css" rel="stylesheet">
-    <link href="css/docs.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
+   <head>
+      <meta charset="utf-8">
+      <title>Components &middot; Vue</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Loading Bootstrap -->
+      <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+      <link href="bootstrap/css/prettify.css" rel="stylesheet">
+      <link href="css/components.css" rel="stylesheet">
+      <link href="css/docs.css" rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+      <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <ul class="demo-sidebar hide-on-tablets">
-      <li><a href="#fui-button">Header</a></li>
-      <li><a href="#fui-checkbox">Slider</a></li>
-      <li><a href="#fui-radio">Selecter</a></li>
-      <li><a href="#fui-dropdown">Navigation</a></li>
-      <li><a href="#fui-input">Cards</a></li> <!-- Expand on -->
-      <li><a href="#fui-navbar">Crew</a></li>
-      <li><a href="#fui-pager">Pricing Tables</a></li>
-      <li><a href="#fui-pagination">Form</a></li>
-      <li><a href="#fui-progress">Switcher</a></li>
-      <li><a href="#fui-select">Feature List</a></li>
-      <li><a href="#fui-switch">Content-Block-1</a></li>
-      <li><a href="#fui-tagsinput">Content-Block-2</a></li>
-      <li><a href="#fui-tooltip">Content-Block-3</a></li>
-      <li><a href="#fui-slider">Banner</a></li>
-      <li><a href="#fui-typeahead">Typeahead</a></li>
-    </ul> <!-- /nav -->
+      <![endif]-->
+   </head>
+   <body>
+      <ul class="demo-sidebar hide-on-tablets">
+         <li><a href="#header">Header</a></li>
+         <li><a href="#slider">Slider</a></li>
+         <li><a href="#selector">Selector</a></li>
+         <li><a href="#navigation">Navigation</a></li>
+         <li><a href="#cards">Cards</a></li>  <!-- Expand on -->
+         <li><a href="#crew">Crew</a></li>
+         <li><a href="#pricing-tables">Pricing Tables</a></li>
+         <li><a href="#form">Form</a></li>
+         <li><a href="#switcher">Switcher</a></li>
+         <li><a href="#feature-list">Feature List</a></li>
+         <li><a href="#content-block-1">Content-Block-1</a></li>
+         <li><a href="#content-block-2">Content-Block-2</a></li>
+         <li><a href="#content-block-3">Content-Block-3</a></li>
+         <li><a href="#banner">Banner</a></li>
 
-		<h1 class="demo-headline">Components</h1>
-    <div class="container">
-    	<div id="fui-button" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Header</h3>
-        </div>
-
-        <div class="demo-content">
-          <p>
-            To get the current header use the following code
-          </p>
+      </ul>
+      <!-- /nav -->
+      <h1 class="demo-headline">Components</h1>
+      <div class="container">
           
-
-
           
-<pre class="prettyprint">
+          
+          <div id="header" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Header</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  To get the current header use the following code
+               </p>
+               <pre class="prettyprint">
 &lt;section class="header-19-sub"&gt;
     &lt;div class="background"&gt;&nbsp;&lt;/div&gt;
     &lt;img class="hidden-xs" src="static/img/header/materialcalc.gif" alt=""&gt;
@@ -80,198 +72,245 @@
 &lt;/section&gt;
 </pre>
 
-        
+            </div>
+         </div>
           
-
           
-         
           
-
-          <p>
-            Button groups, toolbars, and disabled state also work as expected.
-          </p>
-        </div>
-</div><!-- /.demo-row -->
-
-			<div id="fui-checkbox" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Checkboxes</h3>
-        </div>
-
-        <div class="demo-content">
-          <p>
-            Using flat style checkboxes requires a JS plugin which creates all the custom markup for us. Let's take a look:
-          </p>
-          <label class="checkbox" for="checkbox1">
-            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox2">
-            <input type="checkbox" value="" id="checkbox2" checked="checked" data-toggle="checkbox">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox3">
-            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox4">
-            <input type="checkbox" value="" id="checkbox4" checked="checked" data-toggle="checkbox" disabled="">
-            Checkbox
-          </label>
-
-          <h6 class="ptl">The Data Attributes:</h6>
-<pre class="prettyprint">
-&lt;label class="checkbox" for="checkbox1"&gt;
-  &lt;input type="checkbox" value="" id="checkbox1" data-toggle="checkbox"&gt;
-  Checkbox
-&lt;/label&gt;
+          <div id="slider" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Slider</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  To get the current Slider use the following code: 
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-35&quot;&gt;
+    &lt;ul class=&quot;content-35-customPager&quot;&gt;
+        &lt;li class=&quot;menuicon&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;fui-list&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-slide-index=&quot;0&quot; class=&quot;active&quot;&gt;App Info&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-slide-index=&quot;1&quot;&gt;Your App&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-slide-index=&quot;2&quot;&gt;More&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;bx-wrapper&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;div class=&quot;bx-viewport&quot; style=&quot;width: 100%; overflow: hidden; position: relative; height: 946px;&quot;&gt;&lt;ul class=&quot;content-35-slider&quot; style=&quot;width: 515%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-40px, 0px, 0px);&quot;&gt;
+         &lt;li class=&quot;content-35-slider-item&quot; style=&quot;float: left; list-style: none; position: relative; width: 1903px;&quot;&gt;
+            &lt;div class=&quot;background doc&quot;&gt;
+                &lt;div class=&quot;container&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;div&gt;
+                                &lt;img src=&quot;static/img/animation/swipe.gif&quot; alt=&quot;&quot;&gt;
+                                
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-5 col-sm-offset-5&quot;&gt;
+                        &lt;h2&gt;App Details&lt;/h2&gt;
+                        &lt;p class=&quot;lead&quot;&gt;Showcase your app in it&apos;s best form, why not use these animation sliders to help bring out the best of your app? Click on the icons above to navigate through the slider.&lt;/p&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;ask-question&quot;&gt;Info: &lt;/a&gt;
+                        &lt;dl class=&quot;tech-info&quot;&gt;
+                            &lt;dt&gt;Release Date&lt;/dt&gt;
+                            &lt;dd&gt;November 20, 2014&lt;/dd&gt;
+                            &lt;dt&gt;Format&lt;/dt&gt;
+                            &lt;dd&gt;APK&lt;/dd&gt;
+                            &lt;dt&gt;Size&lt;/dt&gt;
+                            &lt;dd&gt;20 MB, Ziped&lt;/dd&gt;
+                            &lt;dt&gt;Consists&lt;/dt&gt;
+                            &lt;dd&gt;
+                                Home Screen
+                                &lt;br&gt;Camera 
+                                &lt;br&gt;Login Screen
+                            &lt;/dd&gt;
+                            &lt;dt&gt;Android Version&lt;/dt&gt;
+                            &lt;dd&gt;5.0&lt;/dd&gt;
+                            &lt;dt&gt;License&lt;/dt&gt;
+                            &lt;dd&gt;GPL License&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;content-35-slider-item&quot; style=&quot;float: left; list-style: none; position: relative; width: 1903px;&quot;&gt;
+            &lt;div class=&quot;background bread&quot;&gt;
+                &lt;div class=&quot;container&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;div&gt;
+                                &lt;img src=&quot;static/img/animation/resizable.gif&quot; alt=&quot;&quot;&gt;
+                                
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-5 col-sm-offset-5&quot;&gt;
+                        &lt;h2&gt;App History&lt;/h2&gt;
+                        &lt;p class=&quot;lead&quot;&gt;Showcase your app in it&apos;s best form, why not use these animation sliders to help bring out the best of your app?&lt;/p&gt;
+                        &lt;div class=&quot;row columns&quot;&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                                &lt;a href=&quot;#&quot;&gt;
+                                    &lt;img src=&quot;static/img/content/thumbnail-crumbs.jpg&quot; alt=&quot;&quot;&gt;
+                                    &lt;b&gt;
+                                        &lt;strong&gt;Crumbs&lt;/strong&gt;
+                                        &lt;span class=&quot;svgIcon&quot;&gt;
+                                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;path d=&quot;M30 0h-16c-1.105 0-2 0.894-2 2v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-16c0-1.105-0.895-2-2-2zM28 16h-12v-12h12v12zM16 28h-12v-12h4v-4h-6c-1.105 0-2 0.895-2 2v16c0 1.105 0.894 2 2 2h16c1.105 0 2-0.895 2-2v-6h-4v4z&quot; fill=&quot;#eaeaea&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                        &lt;/span&gt;
+                                    &lt;/b&gt;
+                                    &lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                                &lt;a href=&quot;#&quot;&gt;
+                                    &lt;img src=&quot;static/img/backgrounds/march.jpg&quot; alt=&quot;&quot;&gt;
+                                    &lt;b&gt;
+                                        &lt;strong&gt;Hipstafood&lt;/strong&gt;
+                                        &lt;span class=&quot;svgIcon&quot;&gt;
+                                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;path d=&quot;M30 0h-16c-1.105 0-2 0.894-2 2v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-16c0-1.105-0.895-2-2-2zM28 16h-12v-12h12v12zM16 28h-12v-12h4v-4h-6c-1.105 0-2 0.895-2 2v16c0 1.105 0.894 2 2 2h16c1.105 0 2-0.895 2-2v-6h-4v4z&quot; fill=&quot;#eaeaea&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                        &lt;/span&gt;
+                                    &lt;/b&gt;
+                                    &lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;content-35-slider-item&quot; style=&quot;float: left; list-style: none; position: relative; width: 1903px;&quot;&gt;
+            &lt;div class=&quot;background landscape&quot;&gt;
+                &lt;div class=&quot;container&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;div&gt;
+                                &lt;img src=&quot;static/img/animation/drawer.gif&quot; alt=&quot;&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-5 col-sm-offset-5&quot;&gt;
+                        &lt;h2&gt;More Than Just an App&lt;/h2&gt;
+                        &lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/p&gt;
+                        &lt;div class=&quot;row columns&quot;&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                                &lt;h3&gt;Something here...&lt;/h3&gt;
+                                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                                &lt;h3&gt;Something else here...&lt;/h3&gt;
+                                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;contact&quot;&gt;&quot;This is a good space to insert a quote about your app&quot;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+       
+    &lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;bx-controls&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/section&gt;
 </pre>
 
-          <h6 class="ptl">Usage via JS:</h6>
-<pre class="prettyprint">
-$(':checkbox').checkbox();
+            </div>
+         </div>
+          
+          <div id="selector" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Seclector</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  The "Selector" is one of the critical components of showing off your interface. Take note that to receive the black &amp; white -> colour effect, you'll need both a black &amp; white version plus a colour version of your image, as the image is changed from the black and white version to the colour image, once it is hovered upon. 
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-30&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row features&quot;&gt;
+            &lt;div class=&quot;col-sm-3 box-1&quot;&gt;
+                
+                &lt;div class=&quot;description-top&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                    Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-tl@2x.png&quot; width=&quot;61&quot; height=&quot;97&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;&lt;div class=&quot;img&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-1-bw@2x.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-1@2x.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;description-bottom&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                    Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-bl@2x.png&quot; width=&quot;97&quot; height=&quot;110&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-3 box-2&quot;&gt;
+                
+                &lt;div class=&quot;description-top&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                    Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-tl@2x.png&quot; width=&quot;61&quot; height=&quot;97&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;&lt;div class=&quot;img&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-2-bw@2x.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-2@2xc-30.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;description-bottom&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                   Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-br@2x.png&quot; width=&quot;97&quot; height=&quot;110&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-3 box-3&quot;&gt;
+                
+                &lt;div class=&quot;description-top&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                    Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-tr@2x.png&quot; width=&quot;61&quot; height=&quot;97&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;&lt;div class=&quot;img&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-3-bw@2x.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-3@2x.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;description-bottom&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                    Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-bl@2x.png&quot; width=&quot;97&quot; height=&quot;110&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-3 box-4&quot;&gt;
+                
+                &lt;div class=&quot;description-top&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                    Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-tr@2x.png&quot; width=&quot;61&quot; height=&quot;97&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;&lt;div class=&quot;img&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-4-bw@2x.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/screen-4@2x.png&quot; width=&quot;220&quot; height=&quot;391&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;description-bottom&quot;&gt;
+                    &lt;h6&gt;Demonstrate your app&apos;s interface&lt;/h6&gt;
+                    Just use this handy component to show your website&apos;s viewers your app&apos;s interfact or something else in its best light
+                    &lt;img src=&quot;static/img/content/arrow-br@2x.png&quot; width=&quot;97&quot; height=&quot;110&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 </pre>
 
-          <div class="pvm">
-            <h6>Methods:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.checkbox('toggle')</strong>
-            <br/>
-            toggles the checkbox state from <span class="text-info">checked</span>
-            to <span class="text-info">unchecked</span> and back.
-          </p>
-          <p class="mbl">
-            <strong>.checkbox('check')</strong>
-            <br/>
-            sets the checkbox state to <span class="text-info">checked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.checkbox('uncheck')</strong>
-            <br/>
-            sets the checkbox state to <span class="text-info">unchecked</span>.
-          </p>
-<pre class="prettyprint">
-$(':checkbox').checkbox('check');
-</pre>
-
-          <div class="pbm ptl">
-            <h6>Events:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.on('toggle')</strong>
-            <br/>
-            Fired when the checkbox state changes between
-            <span class="text-info">checked</span> and
-            <span class="text-info">unchecked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.on('change')</strong>
-            <br/>
-            Same as <span class="text-info">toggle</span>.
-          </p>
-<pre class="prettyprint">
-$(':checkbox').on('toggle', function() {
-  // Do something
-});
-</pre>
-
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-      <div id="fui-radio" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Radio buttons</h3>
-        </div>
-
-        <div class="demo-content">
-          <p>
-            Styling radio buttons also requires using a JS plugin. We have tried making things easy so you won't have to spend a huge amount of time playing around with custom&nbsp;components.
-          </p>
-          <label class="radio">
-            <input type="radio" name="group1" value="1" data-toggle="radio">
-            Radio is off
-          </label>
-          <label class="radio">
-            <input type="radio" name="group1" value="2" data-toggle="radio" checked>
-            Radio is on
-          </label>
-          <label class="radio">
-            <input type="radio" name="group2" value="1" data-toggle="radio" disabled>
-            Radio is off
-          </label>
-          <label class="radio">
-            <input type="radio" name="group2" value="2" data-toggle="radio" disabled checked>
-            Radio is on
-          </label>
-
-          <h6 class="ptl">The Data Attributes:</h6>
-<pre class="prettyprint">
-&lt;label class="radio"&gt;
-  &lt;input type="radio" name="group1" value="1" data-toggle="radio"&gt;
-  Radio is off
-&lt;/label&gt;
-
-&lt;label class="radio"&gt;
-  &lt;input type="radio" name="group1" value="2" data-toggle="radio" checked&gt;
-  Radio is on
-&lt;/label&gt;
-</pre>
-
-          <h6 class="ptl">The JS:</h6>
-<pre class="prettyprint">
-$(':radio').radio();
-</pre>
-
-          <div class="pvm">
-            <h6>Methods:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.radio('check')</strong>
-            <br/>
-            sets the radio button state to <span class="text-info">checked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.radio('uncheck')</strong>
-            <br/>
-            sets the radio state to <span class="text-info">unchecked</span>.
-          </p>
-<pre class="prettyprint">
-$(':radio').radio('check');
-</pre>
-
-          <div class="pbm ptl">
-            <h6>Events:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.on('toggle')</strong>
-            <br/>
-            Fired when the radio button state changes between
-            <span class="text-info">checked</span> and
-            <span class="text-info">unchecked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.on('change')</strong>
-            <br/>
-            Same as <span class="text-info">toggle</span> with just one difference &mdash; the event is fired for each radio button that gets a state change.
-          </p>
-<pre class="prettyprint">
-$(':radio').on('toggle', function() {
-  // Do something
-});
-</pre>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-    </div><!-- /.container -->
-
-
-
-    <div class="container ptl">
-    	<div id="fui-dropdown" class="pbl"></div>
+            </div>
+         </div>
+          
+          
+              	<div id="navigation" class="pbl"></div>
 
       <div class="demo-row">
         <div class="demo-title">
@@ -337,978 +376,604 @@ $(':radio').on('toggle', function() {
 </pre>
         </div> <!-- /.demo-content -->
       </div> <!-- /.demo-row -->
-
-			<div id="fui-input" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Input</h3>
-        </div>
-
-        <div class="demo-content">
-          <p class="mbl">
-            The restyled <a href="http://getbootstrap.com/css/#forms">Bootstrap input</a>. Add <span class="text-info">flat</span> as an additional class to completely remove the borders:
-          </p>
-
-					<div class="row">
-						<div class="col-lg-5">
-							<input type="text" value="" placeholder="Enter something" class="form-control" />
-						</div>
-					</div>
-					<hr />
-					<div class="row">
-						<div class="col-lg-5">
-							<input type="text" value="" placeholder="Enter something" class="form-control flat" />
-						</div>
-					</div>
-<pre class="prettyprint mtl">
-&lt;!-- Default input --&gt;
-&lt;input type="text" placeholder="Enter something" class="form-control" /&gt;
-
-&lt;!-- Without borders --&gt;
-&lt;input type="text" placeholder="Enter something" class="form-control flat" /&gt;
-</pre>
-
-          <p class="ptl">And few sizes:</p>
-          <div class="row">
-          	<div class="col-lg-5">
-	          	<input type="text" value="" placeholder="Huge" class="form-control input-hg" />
-          	</div>
-          </div>
-          <hr />
-          <div class="row">
-          	<div class="col-lg-5">
-	          	<input type="text" value="" placeholder="Large" class="form-control input-lg" />
-          	</div>
-          </div>
-          <hr />
-          <div class="row">
-          	<div class="col-lg-5">
-	          	<input type="text" value="" placeholder="Default" class="form-control" />
-          	</div>
-          </div>
-          <hr />
-          <div class="row">
-          	<div class="col-lg-5">
-	          	<input type="text" value="" placeholder="Small" class="form-control input-sm" />
-          	</div>
-          </div>
-<pre class="prettyprint mtl">
-&lt;input type="text" class="form-control input-hg" placeholder="Huge" /&gt;
-&lt;input type="text" class="form-control input-lg" placeholder="Large" /&gt;
-&lt;input type="text" class="form-control" placeholder="Default" /&gt;
-&lt;input type="text" class="form-control input-sm" placeholder="Small" /&gt;
-</pre>
-
-          <p class="ptl">You can have an icon inside:</p>
-          <div class="row">
-          	<div class="col-lg-5">
-	          	<div class="form-group">
-	              <input type="text" value="" placeholder="With icon" class="form-control" />
-	              <span class="input-icon fui-check-inverted"></span>
-	            </div>
-          	</div>
-          </div>
-<pre class="prettyprint mtm">
-&lt;div class="form-group"&gt;
-  &lt;input type="text" class="form-control" placeholder="With icon" /&gt;
-  &lt;span class="input-icon fui-check-inverted"&gt;&lt;/span&gt;
-&lt;/div&gt;
-</pre>
-
-        <p class="ptl">You can have the input with append/prepend options:</p>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon">@</span>
-                  <input class="form-control" type="text" placeholder="Prepend" />
-                </div>
-              </div>
+          
+          <div id="cards" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Cards</h3>
             </div>
-          </div>
+            <div class="demo-content">
+               <p>
+                  To get the "Cards" component use the following code:
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-22 bg-midnight-blue ani-processed&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-4&quot;&gt;
+                &lt;h3&gt;It&apos;s Interactive&lt;/h3&gt;
 
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Append" />
-                  <span class="input-group-addon">@</span>
-                </div>
-              </div>
+                &lt;p&gt;This isn&apos;t your average theme. Vue is fully interactive through clever use of motion. The falling cards on the right can be customized to your own preferred look and feel by editing/adding your own image to the .PSD carb mockup and then saving over the current image. 
+                &lt;/p&gt;
+                &lt;a class=&quot;btn btn-clear&quot; href=&quot;#&quot;&gt;Sample Button&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-8&quot;&gt;
+                &lt;div class=&quot;img hidden-xs&quot;&gt;
+                    &lt;img src=&quot;static/img/content/boarded-1.png&quot; width=&quot;834&quot; height=&quot;713&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/board-2.png&quot; width=&quot;974&quot; height=&quot;533&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/boarded-1.png&quot; width=&quot;512&quot; height=&quot;549&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/board-4.png&quot; width=&quot;653&quot; height=&quot;367&quot; alt=&quot;&quot;&gt;
+                    &lt;img src=&quot;static/img/content/board-5.png&quot; width=&quot;952&quot; height=&quot;267&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;description&quot;&gt;
+                    &lt;h6&gt;Smart Layers&lt;/h6&gt;
+                    Just put the image with your app&apos;s inside the .PSD and save it over the current image to get your desired look and feel.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
             </div>
-          </div>
-
-<pre class="prettyprint mtm">
-&lt;!-- Prepend --&gt;
-&lt;div class="form-group"&gt;
-  &lt;div class="input-group"&gt;
-    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
-    &lt;input type="text" class="form-control" placeholder="Prepend" /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Append --&gt;
-&lt;div class="form-group"&gt;
-  &lt;div class="input-group"&gt;
-    &lt;input type="text" class="form-control" placeholder="Append" /&gt;
-    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-
-          <p class="ptl">
-            The different color styles and the disabled state work as expected:
-            <div class="row">
-            	<div class="col-lg-6">
-	            	<div class="form-group has-error">
-		              <input class="form-control" type="text" placeholder="Error" />
-		            </div>
-            	</div>
+         </div>
+          
+          <div id="crew" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Crew</h3>
             </div>
-            <div class="row">
-            	<div class="col-lg-6">
-	            	<div class="form-group has-warning">
-		              <input class="form-control" type="text" placeholder="Warning" />
-		            </div>
-            	</div>
+            <div class="demo-content">
+               <p>
+                  To get the current "Crew" component to display your team, use the following code:
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;crew-4&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h3&gt;The Team&lt;br&gt;
+           Meet the crew behind your app. Use this to show a quick bio of your team members along with social links.&lt;/h3&gt;
+
+        &lt;div class=&quot;members&quot;&gt;
+            &lt;div class=&quot;member-wrapper&quot;&gt;
+                &lt;div class=&quot;member&quot;&gt;
+                    &lt;div class=&quot;photo-wrapper&quot;&gt;
+                        &lt;div class=&quot;photo&quot; style=&quot;background-image: url(file:///D:/Development/Applandr/static/img/crew/vladimir-k.png);&quot;&gt;&lt;img src=&quot;static/img/crew/vladimir-k.png&quot; alt=&quot;&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;overlay&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-vimeo&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;info&quot;&gt;
+                        &lt;div class=&quot;name&quot;&gt;Vladimir Kudinov&lt;/div&gt;
+                        &lt;b&gt;Designer&lt;/b&gt; who makes easy to change and easy to create new elements.
+
+                        &lt;div class=&quot;contacts&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;http://google.com&lt;/a&gt;&lt;br&gt;
+                            &lt;a href=&quot;#&quot;&gt;@Twitter&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;member-wrapper&quot;&gt;
+                &lt;div class=&quot;member&quot;&gt;
+                    &lt;div class=&quot;photo-wrapper&quot;&gt;
+                        &lt;div class=&quot;photo&quot; style=&quot;background-image: url(file:///D:/Development/Applandr/static/img/crew/sergey-s.png);&quot;&gt;&lt;img src=&quot;static/img/crew/sergey-s.png&quot; alt=&quot;&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;overlay&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-vimeo&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;info&quot;&gt;
+                        &lt;div class=&quot;name&quot;&gt;Sergey Shmidt&lt;/div&gt;
+                        &lt;b&gt;Designer&lt;/b&gt; who makes easy to change and easy to create new elements.
+
+                        &lt;div class=&quot;contacts&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;http://uber.com&lt;/a&gt;&lt;br&gt;
+                            &lt;a href=&quot;#&quot;&gt;@Uber&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;member-wrapper&quot;&gt;
+                &lt;div class=&quot;member&quot;&gt;
+                    &lt;div class=&quot;photo-wrapper&quot;&gt;
+                        &lt;div class=&quot;photo&quot; style=&quot;background-image: url(file:///D:/Development/Applandr/static/img/crew/adrian-v.png);&quot;&gt;&lt;img src=&quot;static/img/crew/adrian-v.png&quot; alt=&quot;&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;overlay&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-vimeo&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fui-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;info&quot;&gt;
+                        &lt;div class=&quot;name&quot;&gt;Adrian Valeanu&lt;/div&gt;
+                        &lt;b&gt;Designer&lt;/b&gt; who makes easy to change and easy to create new elements.
+
+                        &lt;div class=&quot;contacts&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;http://techcrunch.com&lt;/a&gt;&lt;br&gt;
+                            &lt;a href=&quot;#&quot;&gt;@TCrunch&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.container--&gt;
+&lt;/section&gt;
+</pre>
+
             </div>
-            <div class="row">
-            	<div class="col-lg-6">
-	            	<div class="form-group has-success">
-		              <input class="form-control" type="text" placeholder="Success" />
-		            </div>
-            	</div>
+         </div>
+          
+          <div id="pricing-tables" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Pricing Tables</h3>
             </div>
-            <div class="row">
-            	<div class="col-lg-6">
-	            	<div class="form-group">
-		              <input class="form-control" type="text" placeholder="Disabled" disabled />
-		            </div>
-            	</div>
+            <div class="demo-content">
+               <p>
+                  To get the current Pricing Table use the following code
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;price-5&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;plans&quot;&gt;
+            &lt;div class=&quot;plan&quot;&gt;
+                &lt;div class=&quot;title&quot;&gt;
+                    &lt;div class=&quot;price&quot;&gt;
+                        &lt;small&gt;$&lt;/small&gt;
+                        0
+                    &lt;/div&gt;
+                    Novice
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                    &lt;div class=&quot;description&quot;&gt;
+                        &lt;div class=&quot;description-box&quot;&gt;
+                            &lt;big&gt;10,000 uploads&lt;/big&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                        &lt;div class=&quot;description-box&quot;&gt;
+                            &lt;big&gt;10 photos per month&lt;/big&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;description-more&quot;&gt;
+                        &lt;span class=&quot;fui-cmd&quot;&gt;&lt;/span&gt;
+                        &lt;big&gt;Ads&lt;/big&gt;
+
+                        &lt;p class=&quot;info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+                        &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;Change to this Plan&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;plan plan-2&quot;&gt;
+                &lt;div class=&quot;title&quot;&gt;
+                    &lt;div class=&quot;price&quot;&gt;
+                        &lt;small&gt;$&lt;/small&gt;
+                        29
+                    &lt;/div&gt;
+                    Intermediate
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                    &lt;div class=&quot;description&quot;&gt;
+                        &lt;div class=&quot;description-box&quot;&gt;
+                            &lt;big&gt;Unlimited uploads&lt;/big&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                        &lt;div class=&quot;description-box&quot;&gt;
+                            &lt;big&gt;10 photos per month&lt;/big&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;description-more&quot;&gt;
+                        &lt;span class=&quot;fui-cmd&quot;&gt;&lt;/span&gt;
+                        &lt;big&gt;Ads&lt;/big&gt;
+
+                        &lt;p class=&quot;info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+                        &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;Change to this Plan&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;plan&quot;&gt;
+                &lt;div class=&quot;title&quot;&gt;
+                    &lt;div class=&quot;price&quot;&gt;
+                        &lt;small&gt;$&lt;/small&gt;
+                        50
+                    &lt;/div&gt;
+                    Advanced
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                    &lt;div class=&quot;description&quot;&gt;
+                        &lt;div class=&quot;description-box&quot;&gt;
+                            &lt;big&gt;Unlimited Uploads&lt;/big&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                        &lt;div class=&quot;description-box&quot;&gt;
+                            &lt;big&gt;5,000 photos per month&lt;/big&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;description-more&quot;&gt;
+                        &lt;span class=&quot;fui-cmd&quot;&gt;&lt;/span&gt;
+                        &lt;big&gt;No ads&lt;/big&gt;
+
+                        &lt;p class=&quot;info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+                        &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;Change to this Plan&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.container--&gt;
+&lt;/section&gt;
+</pre>
+
             </div>
-          </p>
-
-          <p class="ptl mtl">
-            The search form doesn't have any background color set to append/prepend:
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="input-group input-group-hg input-group-rounded">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>
-                  <input type="text" class="form-control" placeholder="Search" id="search-query-2">
-                </div>
-              </div>
+         </div>
+          
+          <div id="form" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Form</h3>
             </div>
-          </div>
+            <div class="demo-content">
+               <p>
+                  To get the Form, which you can use for Registration, Contact etc.
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-20 v-center bg-midnight-blue&quot;&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-sm-6&quot;&gt;
+                    &lt;h3&gt;Get pre-liminary access to your app&lt;/h3&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-sm-6&quot;&gt;
+                    &lt;div class=&quot;signup-form&quot;&gt;
+                        &lt;form class=&quot;clearfix&quot;&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label&gt;What is your e-mail?&lt;/label&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;clearfix&quot;&gt;
+                                &lt;div class=&quot;form-group pull-left&quot;&gt;
+                                    &lt;label&gt;Password&lt;/label&gt;
+                                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot;&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;form-group pull-right&quot;&gt;
+                                    &lt;label&gt;Confirmation&lt;/label&gt;
+                                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot;&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label&gt;Your Site Link&lt;/label&gt;
+                                &lt;div class=&quot;site-link&quot;&gt;
+                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                                    &lt;b&gt;.startup.com&lt;/b&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;button class=&quot;btn btn-huge btn-info&quot;&gt;Sign Up&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-sm-4 col-sm-offset-1 features&quot;&gt;
+                    &lt;big&gt;This component is a form which you can use for Registration, Contact, Sign-Up, Login etc. You can customize it to your heart&apos;s desires.&lt;/big&gt;
 
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search" id="search-query-3">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>
-                </div>
-              </div>
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;h6&gt;Something here...&lt;/h6&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;h6&gt;Another something here...&lt;/h6&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
             </div>
-          </div>
-
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-navbar" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Navbar</h3>
-        </div>
-        <div class="demo-content">
-          <p class="mbl">
-            The restyled <a href="http://getbootstrap.com/components/#navbar">Bootstrap navbar</a>.
-          </p>
-
-          <nav class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-                <span class="sr-only">Toggle navigation</span>
-              </button>
-              <a class="navbar-brand" href="#">Flat UI</a>
+         </div>
+          
+          <div id="switcher" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Switcher</h3>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-01">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#fakelink">Products</a></li>
-                <li><a href="#fakelink">Features</a></li>
-               </ul>
-              <form class="navbar-form navbar-right" action="#" role="search" style="width: 250px">
-                <div class="form-group">
-                  <div class="input-group">
-                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                    <span class="input-group-btn">
-                      <button type="submit" class="btn"><span class="fui-search"></span></button>
-                    </span>
-                  </div>
-                </div>
-              </form>
-            </div><!-- /.navbar-collapse -->
-          </nav><!-- /navbar -->
+            <div class="demo-content">
+               <p>
+                  To get the Switcher use the following code
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-24 bg-midnight-blue&quot;&gt;
+    &lt;img class=&quot;image&quot; src=&quot;static/img/devices/htc_one_music.png&quot; alt=&quot;&quot;&gt;
 
-<pre class="prettyprint mvl">
-&lt;nav class="navbar navbar-default" role="navigation"&gt;
-  &lt;div class="navbar-header"&gt;
-    &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01"&gt;
-      &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;a class="navbar-brand" href="#"&gt;Flat UI&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class="collapse navbar-collapse" id="navbar-collapse-01"&gt;
-    &lt;ul class="nav navbar-nav"&gt;
-      &lt;li class="active"&gt;&lt;a href="#fakelink"&gt;Products&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="#fakelink"&gt;Features&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;form class="navbar-form navbar-right" action="#" role="search"&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="input-group"&gt;
-          &lt;input class="form-control" id="navbarInput-01" type="search" placeholder="Search"&gt;
-          &lt;span class="input-group-btn"&gt;
-            &lt;button type="submit" class="btn"&gt;&lt;span class="fui-search"&gt;&lt;/span&gt;&lt;/button&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/form&gt;
-  &lt;/div>&lt;!-- /.navbar-collapse --&gt;
-&lt;/nav>&lt;!-- /navbar --&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-6 col-sm-offset-6&quot;&gt;
+                &lt;div class=&quot;features features-clear&quot;&gt;
+                    &lt;div class=&quot;features-header&quot;&gt;
+                        &lt;div class=&quot;box active&quot;&gt;
+                            &lt;div class=&quot;fui-cmd&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;box&quot;&gt;
+                            &lt;div class=&quot;fui-mic&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;box&quot;&gt;
+                            &lt;div class=&quot;fui-user&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;features-bodies&quot; style=&quot;height: 316px;&quot;&gt;
+                        &lt;div class=&quot;features-body active&quot; style=&quot;height: 316px;&quot;&gt;
+                            &lt;h3&gt;Feature Switcher&lt;/h3&gt;
+
+                            &lt;p&gt;Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can change the icons if you like or add more as you please.  Also take note that the image on the left can be recreated using the Mockup .PSD&apos;s provided with the HTML Template
+                            &lt;/p&gt;
+                            &lt;a class=&quot;btn btn-clear&quot; href=&quot;#&quot;&gt;TRY IT NOW&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;features-body&quot; style=&quot;height: 316px;&quot;&gt;
+                            &lt;h3&gt;Feature 2&lt;/h3&gt;
+
+                            &lt;p&gt;Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can use these to create some of the best looking sliders/carousels. Also take note that the image on the left can be recreated using the Mockup .PSD&apos;s provided with the HTML Template
+                            &lt;/p&gt;
+                            &lt;a class=&quot;btn btn-clear&quot; href=&quot;#&quot;&gt;TRY IT NOW&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;features-body&quot; style=&quot;height: 316px;&quot;&gt;
+                            &lt;h3&gt;Feature 3&lt;/h3&gt;
+
+                            &lt;p&gt;Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can use these to create some of the best looking sliders/carousels. Also take note that the image on the left can be recreated using the Mockup .PSD&apos;s provided with the HTML Template
+                            &lt;/p&gt;
+                            &lt;a class=&quot;btn btn-clear&quot; href=&quot;#&quot;&gt;TRY IT NOW&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 </pre>
 
-        <p class="ptl">Inverted navbar:</p>
-        <nav class="navbar navbar-inverse" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-02">
-              <span class="sr-only">Toggle navigation</span>
-            </button>
-            <a class="navbar-brand" href="#">Flat UI</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-collapse-02">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#fakelink">Products</a></li>
-              <li><a href="#fakelink">Features</a></li>
-             </ul>
-            <form class="navbar-form navbar-right" action="#" role="search" style="width: 250px">
-              <div class="form-group">
-                <div class="input-group">
-                  <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>
-                </div>
-              </div>
-            </form>
-          </div><!-- /.navbar-collapse -->
-        </nav><!-- /navbar -->
-
-<pre class="prettyprint mvl">
-&lt;nav class="navbar navbar-inverse" role="navigation"&gt;
-&lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
-</pre>
-
-
-        <p class="ptl">Embossed navbar:</p>
-        <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-02">
-              <span class="sr-only">Toggle navigation</span>
-            </button>
-            <a class="navbar-brand" href="#">Flat UI</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-collapse-02">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#fakelink">Products</a></li>
-              <li><a href="#fakelink">Features</a></li>
-             </ul>
-            <form class="navbar-form navbar-right" action="#" role="search" style="width: 250px">
-              <div class="form-group">
-                <div class="input-group">
-                  <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>
-                </div>
-              </div>
-            </form>
-          </div><!-- /.navbar-collapse -->
-        </nav><!-- /navbar -->
-
-<pre class="prettyprint mvl">
-&lt;nav class="navbar navbar-inverse navbar-embossed" role="navigation"&gt;
-&lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
-</pre>
-
-        <p class="ptl">Large navbar:</p>
-        <nav class="navbar navbar-default navbar-lg" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-03">
-              <span class="sr-only">Toggle navigation</span>
-            </button>
-            <a class="navbar-brand" href="#">Flat UI</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-collapse-03">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#fakelink">Products</a></li>
-              <li><a href="#fakelink">Features</a></li>
-             </ul>
-            <form class="navbar-form navbar-right" action="#" role="search" style="width: 250px">
-              <div class="form-group">
-                <div class="input-group">
-                  <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>
-                </div>
-              </div>
-            </form>
-          </div><!-- /.navbar-collapse -->
-        </nav><!-- /navbar -->
-
-<pre class="prettyprint mvl">
-&lt;nav class="navbar navbar-default navbar-lg" role="navigation"&gt;
-&lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
-</pre>
-
-        <p class="ptl">Inline forms:</p>
-        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
-          <div class="navbar-header">
-            <button data-target="#navbar-collapse-04" data-toggle="collapse" class="navbar-toggle" type="button">
-              <span class="sr-only">Toggle navigation</span>
-            </button>
-            <a href="#" class="navbar-brand">Flat UI</a>
-          </div>
-          <div id="navbar-collapse-04" class="collapse navbar-collapse">
-            <form role="search" class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" placeholder="Search" class="form-control">
-              </div>
-              <button class="btn btn-default" type="submit">Submit</button>
-            </form>
-          </div>
-        </nav>
-
-<pre class="prettyprint mvl">
-&lt;form role="search" class="navbar-form navbar-left"&gt;
-  &lt;div class="form-group"&gt;
-    &lt;input type="text" placeholder="Search" class="form-control"&gt;
-  &lt;/div&gt;
-  &lt;button class="btn btn-default" type="submit"&gt;Submit&lt;/button&gt;
-&lt;/form&gt;
-</pre>
-
-        <p class="ptl">Buttons:</p>
-        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
-          <div class="navbar-header">
-            <button data-target="#navbar-collapse-05" data-toggle="collapse" class="navbar-toggle" type="button">
-            </button>
-            <a href="#" class="navbar-brand">Flat UI</a>
-          </div>
-          <div id="navbar-collapse-05" class="collapse navbar-collapse">
-            <button class="btn btn-default navbar-btn" type="button">Sign in</button>
-            <button class="btn btn-default navbar-btn btn-sm" type="button">Sign in</button>
-            <button class="btn btn-default navbar-btn btn-xs" type="button">Sign in</button>
-          </div>
-        </nav>
-
-<pre class="prettyprint mvl">
-&lt;!-- Default Navbar Button --&gt;
-&lt;button class="btn btn-default navbar-btn" type="button"&gt;Sign in&lt;/button&gt;
-&lt;!-- Small Navbar Button --&gt;
-&lt;button class="btn btn-default navbar-btn btn-sm" type="button"&gt;Sign in&lt;/button&gt;
-&lt;!-- Extra Small Navbar Button --&gt;
-&lt;button class="btn btn-default navbar-btn btn-xs" type="button"&gt;Sign in&lt;/button&gt;
-</pre>
-
-        <p class="ptl">Text:</p>
-        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
-          <div class="navbar-header">
-            <button data-target="#navbar-collapse-06" data-toggle="collapse" class="navbar-toggle" type="button">
-            </button>
-            <a href="#" class="navbar-brand">Flat UI</a>
-          </div>
-          <div id="navbar-collapse-06" class="collapse navbar-collapse">
-            <p class="navbar-text">Signed in as Mark Otto</p>
-          </div>
-        </nav>
-
-<pre class="prettyprint mvl">
-&lt;p class="navbar-text"&gt;Signed in as Mark Otto&lt;/p&gt;
-</pre>
-
-        <p class="ptl">Non-nav links:</p>
-        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
-          <div class="navbar-header">
-            <button data-target="#navbar-collapse-07" data-toggle="collapse" class="navbar-toggle" type="button">
-            </button>
-            <a href="#" class="navbar-brand">Flat UI</a>
-          </div>
-          <div id="navbar-collapse-07" class="collapse navbar-collapse">
-            <p class="navbar-text navbar-right">Signed in as <a class="navbar-link" href="#">Mark Otto</a></p>
-          </div>
-        </nav>
-
-<pre class="prettyprint mvl">
-&lt;p class="navbar-text navbar-right"&gt;Signed in as &lt;a class="navbar-link" href="#"&gt;Mark Otto&lt;/a&gt;&lt;/p&gt;
-</pre>
-
-          <p class="ptl">New and Unread indicators:</p>
-          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-02">
-                <span class="sr-only">Toggle navigation</span>
-              </button>
-              <a class="navbar-brand" href="#">Flat UI</a>
             </div>
-
-            <div class="collapse navbar-collapse" id="#navbar-collapse-02">
-              <ul class="nav navbar-nav">
-                <li><a href="#">Messages<span class="navbar-unread">1</span></a></li>
-                <li><a href="#">About Us<span class="navbar-new">1</span></a></li>
-               </ul>
-            </div><!-- /.navbar-collapse -->
-          </nav><!-- /navbar -->
-
-<pre class="prettyprint mvl">
-&lt;!-- ... --&gt;
-  &lt;ul class="nav navbar-nav"&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        Menu item
-        &lt;!-- Indicator with number --&gt;
-        &lt;span class="navbar-new"&gt;2&lt;/span&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;!-- ... --&gt;
-</pre>
-
-<pre class="prettyprint mvl">
-&lt;!-- ... --&gt;
-  &lt;ul class="nav navbar-nav"&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        Menu item
-        &lt;!-- Indicator without number --&gt;
-        &lt;span class="navbar-unread"&gt;&lt;/span&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;!-- ... --&gt;
-</pre>
-
-          <p class="ptl">Fixed to top:</p>
-<pre class="prettyprint mvl">
-&lt;nav class="navbar navbar-default navbar-fixed-top" role="navigation"&gt;
-&lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
-</pre>
-
-          <p class="ptl">Fixed to bottom:</p>
-<pre class="prettyprint mvl">
-&lt;nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"&gt;
-&lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
-</pre>
-
-          <p class="ptl">Static top:</p>
-<pre class="prettyprint mvl">
-&lt;nav class="navbar navbar-default navbar-static-top" role="navigation"&gt;
-&lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
-</pre>
-
-          <div id="fui-pager"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-pager" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Pager</h3>
-        </div>
-        <div class="demo-content">
-          <p>
-            Short pagination where links have a button look. Used for navigating to the next/prev item.
-          </p>
-          <ul class="pager">
-            <li class="previous">
-              <a href="#fakelink">
-                <i class="fui-arrow-left"></i>
-                <span>All messages</span>
-              </a>
-            </li>
-            <li class="next">
-              <a href="#fakelink">
-                <i class="fui-arrow-right"></i>
-              </a>
-            </li>
-          </ul>
-
-<pre class="prettyprint mvl">
-&lt;ul class="pager"&gt;
-  &lt;li class="previous"&gt;
-    &lt;a href="#"&gt;
-      &lt;span&gt;
-        &lt;i class="fui-arrow-left"&gt;&lt;/i&gt;
-        All messages
-      &lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-
-  &lt;li class="next"&gt;
-    &lt;a href="#"&gt;
-      &lt;i class="fui-arrow-right"&gt;&lt;/i&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-          <div id="fui-pagination"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-pagination" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Pagination</h3>
-        </div>
-        <div class="demo-content">
-          <p>
-            The restyled <a href="http://getbootstrap.com/components/#pagination">Bootstrap pagination</a>. We have added a dropdown navigation, a minimalistic look and a text-only look. We have also added a few color schemes with an alternative layout.
-          </p>
-          <div class="pagination">
-            <ul>
-              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
-              <li class="active"><a href="#fakelink">1</a></li>
-              <li><a href="#fakelink">2</a></li>
-              <li><a href="#fakelink">3</a></li>
-              <li><a href="#fakelink">4</a></li>
-              <li><a href="#fakelink">5</a></li>
-              <li><a href="#fakelink">6</a></li>
-              <li><a href="#fakelink">7</a></li>
-              <li><a href="#fakelink">8</a></li>
-              <li><a href="#fakelink">9</a></li>
-              <li><a href="#fakelink">10</a></li>
-              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
-            </ul>
-          </div>
-
-<pre class="prettyprint mvl">
-&lt;div class="pagination"&gt;
-  &lt;ul&gt;
-    &lt;li class="previous"&gt;
-      &lt;a href="#" class="fui-arrow-left"&gt;&lt;/a&gt;
-    &lt;/li&gt;
-
-    &lt;li class="active"&gt;&lt;a href="#fakelink"&gt;1&lt;/a&gt;&lt;/li&gt;
-    ...
-    &lt;li&gt;&lt;a href="#fakelink"&gt;10&lt;/a&gt;&lt;/li&gt;
-
-    &lt;li class="next"&gt;
-      &lt;a href="#" class="fui-arrow-right"&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</pre>
-
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-progress" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Progress</h3>
-        </div>
-        <div class="demo-content">
-          <p>
-            The restyled <a href="http://getbootstrap.com/components/#progress">Bootstrap progress</a>.
-          </p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 45%;"></div>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 40%;"></div>
-            <div class="progress-bar progress-bar-warning" style="width: 10%;"></div>
-            <div class="progress-bar progress-bar-danger" style="width: 10%;"></div>
-            <div class="progress-bar progress-bar-success" style="width: 10%;"></div>
-            <div class="progress-bar progress-bar-info" style="width: 10%;"></div>
-          </div>
-
-<pre class="prettyprint mvl">
-&lt;div class="progress"&gt;
-  &lt;div class="progress-bar" style="width: 40%;"&gt;&lt;/div&gt;
-  &lt;div class="progress-bar progress-bar-warning" style="width: 10%;"&gt;&lt;/div&gt;
-  &lt;div class="progress-bar progress-bar-danger" style="width: 10%;"&gt;&lt;/div&gt;
-  &lt;div class="progress-bar progress-bar-success" style="width: 10%;"&gt;&lt;/div&gt;
-  &lt;div class="progress-bar progress-bar-info" style="width: 10%;"&gt;&lt;/div&gt;
-&lt;/div&gt;
-</pre>
-          <div id="fui-select"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-select" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Select</h3>
-        </div>
-        <div class="demo-content">
-          <p class="mbl">
-            We have made a custom select due to the inability of styling the system one. It is based on the <a href="https://github.com/silviomoreto/bootstrap-select">Selectpicker</a> plug-in with the source slightly modified to meet Bootstrap naming convention.
-          </p>
-          <p class="mbl">
-            The component inherits its entire style from the button so you can use all its colors and sizes without any problems. We have also supported the <span class="text-info">multiple</span> select state as well as the <span class="text-info">block</span> mode where it takes all the available space.
-          </p>
-          <p class="mbl pbl">
-            Grids are supported here as&nbsp;well. For more technical details read the <a href="https://github.com/silviomoreto/bootstrap-select#usage">original&nbsp;documentation</a>.
-          </p>
-          <select name="huge" class="select-block mbl">
-            <optgroup label="Profile">
-              <option value="0">My Profile</option>
-              <option value="1">My Friends</option>
-            </optgroup>
-            <optgroup label="System">
-              <option value="2">Messages</option>
-              <option value="3">My Settings</option>
-              <option value="4" class="highlighted">Logout</option>
-            </optgroup>
-          </select>
-
-          <select multiple="multiple" name="huge" class="select-block mbl">
-            <option value="0">1</option>
-            <option value="1" selected>2</option>
-            <option value="2" selected>3</option>
-            <option value="3" selected>4</option>
-            <option value="4">5</option>
-          </select>
-
-          <p class="mvl">
-            You can write the markup as you would usually do, without any difference:
-          </p>
-
-<pre class="prettyprint mvl">
-&lt;select&gt;
-  &lt;option value="0"&gt;My Profile&lt;/option&gt;
-  &lt;option value="1"&gt;My Friends&lt;/option&gt;
-&lt;/select&gt;
-
-&lt;select multiple="multiple"&gt;
-  &lt;option value="0"&gt;My Profile&lt;/option&gt;
-  &lt;option value="1" selected&gt;My Friends&lt;/option&gt;
-  &lt;option value="2" selected&gt;My Books&lt;/option&gt;
-  &lt;option value="3"&gt;My CDs&lt;/option&gt;
-&lt;/select&gt;
-</pre>
-
-          <p class="mvl ptl">
-            Then transform all the system selects into custom ones with JS:
-          </p>
-
-<pre class="prettyprint mvl">
-$("select").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
-
-// style: select toggle class name (which is .btn)
-// menuStyle: dropdown class name
-
-// You can always select by any other attribute, not just tag name.
-// Also you can leave selectpicker arguments blank to apply defaults.
-</pre>
-          <div id="fui-switch"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-switch" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Switch</h3>
-        </div>
-        <div class="demo-content">
-          <p class="mbl">
-            You can use a custom switch instead of a checkbox. It can have 2 styles: <span class="text-info">circle</span> (default) and <span class="text-info">square</span>. Drag functionality is also supported.
-          </p>
-          <p class="mbl pbl">
-            For more technical details read the <a href="http://www.larentis.eu/switch">original documentation</a>.
-          </p>
-          <span class="mrl">
-            <input type="checkbox" checked data-toggle="switch" />
-          </span>
-          <input type="checkbox" data-toggle="switch" />
-
-          <hr/>
-
-          <div class="switch switch-square mrl"
-            data-on-label="<i class='fui-check'></i>"
-            data-off-label="<i class='fui-cross'></i>">
-            <input type="checkbox" />
-          </div>
-
-          <div class="switch switch-square"
-            data-on-label="<i class='fui-check'></i>"
-            data-off-label="<i class='fui-cross'></i>">
-            <input type="checkbox" checked />
-          </div>
-
-<pre class="prettyprint mvl">
-&lt;!-- Default switch --&gt;
-&lt;input type="checkbox" checked data-toggle="switch" /&gt;
-
-&lt;!-- Square switch --&gt;
-&lt;div class="switch switch-square"&gt;
-  &lt;input type="checkbox" checked data-toggle="switch" /&gt;
-&lt;/div&gt;
-
-&lt;!-- Switch with customized icons --&gt;
-&lt;div class="switch switch-square"
-  data-on-label="&lt;i class='fui-check'&gt;&lt;/i&gt;"
-  data-off-label="&lt;i class='fui-cross'&gt;&lt;/i&gt;"&gt;
-  &lt;input type="checkbox" /&gt;
-&lt;/div&gt;
-</pre>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-tagsinput" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Tags input</h3>
-        </div>
-        <div class="demo-content">
-          <p class="mbl">
-            Used for managing multiple tags with the ability of adding a new one and removing or validating an existing one. It is available in 2 color schemes: grey(default) and primary.
-          </p>
-          <p class="mbl pbl">
-            This component is based on the <a href="http://xoxco.com/projects/code/tagsinput">Tags Input Plugin</a>. For more technical details read the <a href="https://github.com/xoxco/jQuery-Tags-Input#instructions">official plug-in&nbsp;documentation</a>.
-          </p>
-
-          <input name="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
-
-          <p class="ptl">The markup:</p>
-
-<pre class="prettyprint mvl">
-&lt;input name="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" /&gt;
-</pre>
-
-          <p class="ptl">JS:</p>
-
-<pre class="prettyprint mvl">
-$(".tagsinput").tagsInput();
-</pre>
-          <div id="fui-tooltip"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-tooltip" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Tooltip</h3>
-        </div>
-        <div class="demo-content">
-          <p class="mbl">
-            Restyled <a href="http://getbootstrap.com/javascript/#tooltips">Bootstrap tooltip</a>.
-          </p>
-
-          <div style="width: 40%; padding-left: 10px; height: 60px;">
-            <div class="demo-tooltips">
-              <p data-toggle="tooltip" title="Here is a sample of a long dark tooltip. Hell yeah."></p>
+         </div>
+          
+          <div id="feature-list" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Feature List</h3>
             </div>
-          </div> <!-- /tooltips -->
+            <div class="demo-content">
+               <p>
+                  To get a Feature List use the following code
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-5&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-10 col-sm-offset-1&quot;&gt;
+                &lt;h3&gt;Vue utilizes FontAwesome &lt;/h3&gt;
+                &lt;br&gt;
+                &lt;p class=&quot;lead&quot;&gt;This means you can use all of the icons from the FontAwesome library right within Vue! &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row features&quot;&gt;
+            &lt;div class=&quot;col-sm-4 col-sm-offset-2&quot;&gt;
+                &lt;span class=&quot;fui-cmd&quot;&gt; &lt;/span&gt;
+                &lt;h6&gt;Quick&lt;/h6&gt;
 
-<pre class="prettyprint mvl">
-&lt;p data-toggle="tooltip" title="Tooltip copy"&gt;&lt;/p&gt;
+                &lt;p&gt;A sample feature here, just to help you showcase your app better. You can never oversell your product.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 col-sm-offset-1&quot;&gt;
+                &lt;span class=&quot;fui-windows&quot;&gt; &lt;/span&gt;
+                &lt;h6&gt;Responsive&lt;/h6&gt;
+
+                &lt;p&gt;A sample feature here, just to help you showcase your app better. You can never oversell your product.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row features&quot;&gt;
+            &lt;div class=&quot;col-sm-4 col-sm-offset-2&quot;&gt;
+                &lt;span class=&quot;fui-upload&quot;&gt; &lt;/span&gt;
+                &lt;h6&gt;Retina Ready&lt;/h6&gt;
+
+                &lt;p&gt;A sample feature here, just to help you showcase your app better. You can never oversell your product.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 col-sm-offset-1&quot;&gt;
+                &lt;span class=&quot;fui-credit-card&quot;&gt; &lt;/span&gt;
+                &lt;h6&gt;Cheap&lt;/h6&gt;
+
+                &lt;p&gt;A sample feature here, just to help you showcase your app better. You can never oversell your product.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 </pre>
 
-          <div id="fui-slider"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
-
-			<div id="fui-slider" class="pbl"></div>
-
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Slider</h3>
-        </div>
-        <div class="demo-content">
-          <p class="mbl">
-            The restyled <a href="http://jqueryui.com/slider">jQuery UI slider</a> with added slider segments.
-          </p>
-
-          <div id="slider" class="ui-slider"></div>
-
-          <p class="ptl">The markup:</p>
-
-<pre class="prettyprint mvl">
-&lt;div id="slider" class="ui-slider"&gt;&lt;/div&gt;
-</pre>
-
-          <p class="ptl">JS:</p>
-
-<pre class="prettyprint mvl">
-var $slider = $("#slider");
-if ($slider.length > 0) {
-  $slider.slider({
-    min: 1,
-    max: 5,
-    value: 3,
-    orientation: "horizontal",
-    range: "min"
-  }).addSliderSegments($slider.slider("option").max);
-}
-</pre>
-
-          <p class="pvl">How does <span class="text-info">addSliderSegments()</span> work?</p>
-          <p>This is an extended jQuery method placed in the <code>application.js</code> file. It calculates how many segments to append to the slider by looking at a <span class="text-info">slider("option").max</span> which shows a maximum slider value.</p>
-
-<pre class="prettyprint mvl">
-// Add segments to a slider
-$.fn.addSliderSegments = function (amount, orientation) {
-  return this.each(function () {
-    if (orientation == "vertical") {
-      var output = ''
-        , i;
-      for (i = 1; i &lt;= amount - 2; i++) {
-        output += '&lt;div class="ui-slider-segment" style="top:' + 100 / (amount - 1) * i + '%;"&gt;&lt;/div&gt;';
-      };
-      $(this).prepend(output);
-    } else {
-      var segmentGap = 100 / (amount - 1) + "%"
-        , segment = '&lt;div class="ui-slider-segment" style="margin-left: ' + segmentGap + ';"&gt;&lt;/div&gt;';
-      $(this).prepend(segment.repeat(amount - 2));
-    }
-  });
-};
-</pre>
-
-<p class="pvl">Vertical slider:</p>
-
-          <div class="pbl">
-            <div id="vertical-slider" style="height: 200px;"></div>
-          </div>
-
-          <p class="ptl">The markup:</p>
-
-<pre class="prettyprint mvl">
-&lt;div id="vertical-slider" style="height: 200px;"&gt;&lt;/div&gt;
-</pre>
-
-          <p class="ptl">The JS:</p>
-
-<pre class="prettyprint mvl">
-var $verticalSlider = $("#vertical-slider");
-if ($verticalSlider.length) {
-  $verticalSlider.slider({
-    min: 1,
-    max: 5,
-    value: 3,
-    orientation: "vertical",
-    range: "min"
-  }).addSliderSegments($verticalSlider.slider("option").max, "vertical");
-}
-</pre>
-
-          <p class="pvl">Custom slider values:</p>
-
-          <div class="pbl">
-            <div id="slider3">
-              <span class="ui-slider-value first"></span>
-              <span class="ui-slider-value last"></span>
             </div>
-          </div>
+         </div>
+          
+          <div id="content-block-1" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Content-Block-1</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  To get Content-Block-1 use the following code
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-2&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-6&quot;&gt;
+                &lt;h3&gt;Multi useful components&lt;/h3&gt;
 
-          <p class="ptl">The markup:</p>
+                &lt;p&gt;All of these components are made in the same style, and can easily be integrated into
+                    projects, allowing you to create hundreds of solutions for your future projects.
+                &lt;/p&gt;
 
-<pre class="prettyprint mvl">
-&lt;div id="slider3"&gt;
-  &lt;span class="ui-slider-value first"&gt;&lt;/span&gt;
-  &lt;span class="ui-slider-value last"&gt;&lt;/span&gt;
-&lt;/div&gt;
+                &lt;div class=&quot;btns&quot;&gt;
+                    &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;fui-apple&quot;&gt; &lt;/span&gt;Buy in Appstore&lt;/a&gt;
+                    &lt;a href=&quot;#&quot;&gt;&lt;b&gt;Learn More&lt;/b&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-5 col-sm-offset-1&quot;&gt;
+                &lt;div class=&quot;player&quot;&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 </pre>
 
-          <p class="ptl">The JS:</p>
+            </div>
+         </div>
+          
+          <div id="content-block-2" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Content-Block-2</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  To get Content-Block-2 use the following code
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-9&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-6&quot;&gt;
+                &lt;h3&gt;Documentation&lt;/h3&gt;
 
-<pre class="prettyprint mvl">
-var $slider3 = $("#slider3")
-  , slider3ValueMultiplier = 100
-  , slider3Options;
+                &lt;p&gt;Documentation is really important for a developer. Right from it you get to know the product.
+                    We tried to describe all the components and provide the set-up instructions.
+                &lt;/p&gt;
 
-if ($slider3.length > 0) {
-  $slider3.slider({
-    min: 1,
-    max: 5,
-    values: [3, 4],
-    orientation: "horizontal",
-    range: true,
-    slide: function(event, ui) {
-      $slider3.find(".ui-slider-value:first")
-        .text("$" + ui.values[0] * slider3ValueMultiplier)
-        .end()
-        .find(".ui-slider-value:last")
-        .text("$" + ui.values[1] * slider3ValueMultiplier);
-    }
-  });
-
-  slider3Options = $slider3.slider("option");
-  $slider3.addSliderSegments(slider3Options.max)
-    .find(".ui-slider-value:first")
-    .text("$" + slider3Options.values[0] * slider3ValueMultiplier)
-    .end()
-    .find(".ui-slider-value:last")
-    .text("$" + slider3Options.values[1] * slider3ValueMultiplier);
-}
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6 info&quot;&gt;
+                        &lt;h6&gt;User Guide&lt;/h6&gt;
+                        You&rsquo;ll get a description of each component and learn how to connect and use them.
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6 info&quot;&gt;
+                        &lt;h6&gt;Video Tutorials&lt;/h6&gt;
+                        Video tutorials show you how to make a web site for your startup from design to code.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-5 col-sm-offset-1 hidden-xs&quot;&gt;
+                &lt;img src=&quot;static/icons/browser-iphone@2x.png&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 </pre>
-          <div id="fui-typeahead"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
 
-      <div class="demo-row">
-        <div class="demo-title">
-          <h3>Typeahead</h3>
-        </div>
-        <div class="demo-content">
-          <p class="mbl">
-            The restyled <a href="http://twitter.github.io/typeahead.js">Twitter Typeahead</a>.
-          </p>
+            </div>
+         </div>
+          
+         <div id="content-block-3" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Content-Block-3</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  To get the  use the following code
+               </p>
+               <pre class="prettyprint">
+&lt;section class="content-26 bg-clouds"&gt; 
+    &lt;div class="container"&gt; 
+        &lt;div class="row"&gt; 
+            &lt;div class="col-sm-8 col-sm-offset-2"&gt; 
+                &lt;h3&gt; Features&lt;/h3&gt; 
 
-          <div class="form-group">
-            <input class="form-control" type="text" id="typeahead-demo-01" />
-          </div>
+                &lt;p class="lead"&gt; Vue comes bundled with over 10 custom icons which you can use along with FontAwesome to showcase your app and its features.&lt;/p&gt; 
+            &lt;/div&gt; 
+        &lt;/div&gt; 
+        &lt;div class="row features"&gt; 
+            &lt;div class="col-sm-3"&gt; 
+                &lt;img src="static/icons/Chat@2x.png" alt="" width="100" height="100"&gt; 
+                &lt;h6&gt; Feature 1&lt;/h6&gt; 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            &lt;/div&gt; 
+            &lt;div class="col-sm-4 col-sm-offset-1"&gt; 
+                &lt;img src="static/icons/Responsive1@2x.png" alt="" width="100" height="100"&gt; 
+                &lt;h6&gt; Feature 2&lt;/h6&gt; 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            &lt;/div&gt; 
+            &lt;div class="col-sm-3 col-sm-offset-1"&gt; 
+                &lt;img src="static/icons/ps@2x.png" alt="" width="78" height="100"&gt; 
+                &lt;h6&gt; Feature 3&lt;/h6&gt; 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            &lt;/div&gt; 
+        &lt;/div&gt; 
+    &lt;/div&gt; 
+&lt;/section&gt; 
+</pre>
 
-          <div id="fui-slider"></div>
-        </div> <!-- /.demo-content -->
-      </div> <!-- /.demo-row -->
+            </div>
+         </div>
+          
+          
+          <div id="banner" class="pbl"></div>
+         <div class="demo-row">
+            <div class="demo-title">
+               <h3>Banner</h3>
+            </div>
+            <div class="demo-content">
+               <p>
+                  To insert a banner use the following code
+               </p>
+               <pre class="prettyprint">
+&lt;section class=&quot;content-36&quot;&gt; 
+&lt;div class=&quot;container&quot;&gt; 
+&lt;h2&gt;This is a great looking banner. Use this to broadcast any message you'd like&lt;/h2&gt; 
+&lt;a class=&quot;btn btn-success&quot; href=&quot;#&quot;&gt;Click Me&lt;/a&gt; 
+&lt;p&gt;A little subtext always comes in handy, especially when it looks this good.&lt;/p&gt; 
+&lt;/div&gt; 
+&lt;/section&gt;
+</pre>
 
-    </div><!-- /.container -->
+            </div>
+         </div>
+         <!-- /.demo-row -->
+        
+       </div> <!-- Container -->
+         
 
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-    <script src="js/typeahead.js"></script>
-    <script src="bootstrap/js/google-code-prettify/prettify.js"></script>
-    <script src="js/application.js"></script>
-  </body>
+      
+     
+      <!-- Load JS here for greater good =============================-->
+      <script src="js/jquery-1.8.3.min.js"></script>
+      <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+      <script src="js/jquery.ui.touch-punch.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap-select.js"></script>
+      <script src="js/bootstrap-switch.js"></script>
+      <script src="js/flatui-checkbox.js"></script>
+      <script src="js/flatui-radio.js"></script>
+      <script src="js/jquery.tagsinput.js"></script>
+      <script src="js/jquery.placeholder.js"></script>
+      <script src="js/typeahead.js"></script>
+      <script src="bootstrap/js/google-code-prettify/prettify.js"></script>
+      <script src="js/application.js"></script>
+   </body>
 </html>
