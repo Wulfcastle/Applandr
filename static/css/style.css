@@ -1584,20 +1584,20 @@ margin-bottom: 30px;
   border: 0;
   display: block;
 }
-.content-36 {
+.banner {
   text-align: center;
   color: rgba(255, 255, 255, 0.55);
   padding-top: 230px;
   padding-bottom: 180px;
 }
-.content-36 h2 {
+.banner h2 {
   color: #fff;
   font-size: 35px;
   line-height: 55px;
   margin: 0 0 60px;
   letter-spacing: -2px;
 }
-.content-36 .btn-success {
+.banner .btn-success {
   font-size: 22px;
   font-weight: 500;
   padding: 15px 46px;
@@ -1606,10 +1606,10 @@ margin-bottom: 30px;
 border: 3px solid rgba(255, 255, 255, 0.8);
     border-radius: none;
 }
-.content-36 .btn-success:hover {
+.banner .btn-success:hover {
   background: #58D68D;
 }
-.content-36 p {
+.banner p {
   margin: 0 auto;
   width: 48%;
   font-size: 20px;
@@ -1617,7 +1617,7 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   font-weight: 500;
 }
 @media (max-width: 767px) {
-  .content-36 p {
+  .banner p {
     width: 80%;
   }
 }
