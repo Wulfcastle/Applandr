@@ -953,7 +953,7 @@ startupKit.uiKitContent.content29 = function() {};
 startupKit.uiKitContent.content30 = function() {
 
     $(window).resize(function() {
-        var boxes = $('.content-30 .col-sm-3');
+        var boxes = $('.selector .col-sm-3');
         for (var t = 0; t <= boxes.length; t++) {
             var descTop = $(boxes[t]).find('.description-top');
             if ($(window).width() <= 480) {
