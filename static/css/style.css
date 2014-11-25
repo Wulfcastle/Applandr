@@ -2975,17 +2975,17 @@ border: 3px solid rgba(255, 255, 255, 0.8);
 .price-5 .terms a:hover {
   text-decoration: none;
 }
-.content-20 {
+.form {
   position: relative;
   padding: 200px 0;
 }
-.content-20.v-center,
-.content-20 .v-center {
+.form.v-center,
+.form .v-center {
   display: table;
   width: 100%;
 }
-.content-20.v-center > div,
-.content-20 .v-center > div {
+.form.v-center > div,
+.form .v-center > div {
   display: table-cell;
   vertical-align: middle;
   margin-top: 0;
@@ -2993,40 +2993,40 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   float: none;
 }
 @media (min-width: 768px) {
-  .content-20.v-center.row:before,
-  .content-20 .v-center.row:before,
-  .content-20.v-center.row:after,
-  .content-20 .v-center.row:after {
+  .form.v-center.row:before,
+  .form .v-center.row:before,
+  .form.v-center.row:after,
+  .form .v-center.row:after {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  .content-20.v-center,
-  .content-20 .v-center {
+  .form.v-center,
+  .form .v-center {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 5px;
     padding-right: 5px;
   }
-  .content-20.v-center.row,
-  .content-20 .v-center.row {
+  .form.v-center.row,
+  .form .v-center.row {
     display: block;
     width: auto;
   }
-  .content-20.v-center.row:before,
-  .content-20 .v-center.row:before,
-  .content-20.v-center.row:after,
-  .content-20 .v-center.row:after {
+  .form.v-center.row:before,
+  .form .v-center.row:before,
+  .form.v-center.row:after,
+  .form .v-center.row:after {
     display: none;
   }
-  .content-20.v-center.row > *,
-  .content-20 .v-center.row > * {
+  .form.v-center.row > *,
+  .form .v-center.row > * {
     display: block;
     vertical-align: baseline;
   }
 }
-.content-20 h3 {
+.form h3 {
   font-size: 30px;
   font-weight: normal;
   color: #ffffff;
@@ -3035,7 +3035,7 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   line-height: 40px;
   font-weight: 300;
 }
-.content-20 h6 {
+.form h6 {
   text-transform: none;
   font-size: 18px;
   font-weight: normal;
@@ -3043,44 +3043,44 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   font-weight: 500;
   margin: 0 0 9px;
 }
-.content-20 .signup-form,
-.content-20 .signup-form + div {
+.form .signup-form,
+.form .signup-form + div {
   display: inline-block;
   vertical-align: middle;
 }
-.content-20 .signup-form + div {
+.form .signup-form + div {
   margin-left: 100px;
   max-width: 300px;
 }
 @media (max-width: 992px) and (min-width: 768px) {
-  .content-20 .signup-form + div {
+  .form .signup-form + div {
     max-width: 228px;
   }
 }
 @media (max-width: 767px) {
-  .content-20 {
+  .form {
     padding: 80px 20px;
   }
-  .content-20 .signup-form,
-  .content-20 .signup-form + div {
+  .form .signup-form,
+  .form .signup-form + div {
     display: block;
     vertical-align: baseline;
   }
-  .content-20 .signup-form + div {
+  .form .signup-form + div {
     margin-top: 70px;
     margin-left: 0;
     max-width: none;
   }
 }
 @media (max-width: 480px) {
-  .content-20 {
+  .form {
     display: none;
   }
 }
-.content-20 .signup-form {
+.form .signup-form {
   width: 100%;
 }
-.content-20 .signup-form form {
+.form .signup-form form {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3094,74 +3094,74 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   color: #34495e;
   font-family: 'Roboto', sans-serif;
 }
-.content-20 .signup-form form .form-group {
+.form .signup-form form .form-group {
   margin-bottom: 23px;
 }
-.content-20 .signup-form form .form-group.pull-left {
+.form .signup-form form .form-group.pull-left {
   margin-right: 3%;
   width: 47%;
 }
-.content-20 .signup-form form .form-group.pull-right {
+.form .signup-form form .form-group.pull-right {
   margin-left: 3%;
   width: 47%;
 }
-.content-20 .signup-form form label {
+.form .signup-form form label {
   font-size: 15px;
   font-weight: normal;
   color: #34495e;
   margin-bottom: 12px;
 }
-.content-20 .signup-form form input[type="text"],
-.content-20 .signup-form form input[type="password"] {
+.form .signup-form form input[type="text"],
+.form .signup-form form input[type="password"] {
   width: 100%;
   font-size: 16px;
   font-weight: normal;
   color: #34495e;
   border-color: #ecf0f1;
 }
-.content-20 .signup-form form input[type="text"]:hover,
-.content-20 .signup-form form input[type="password"]:hover {
+.form .signup-form form input[type="text"]:hover,
+.form .signup-form form input[type="password"]:hover {
   border-color: #bdc3c7;
 }
-.content-20 .signup-form form input[type="text"]:focus,
-.content-20 .signup-form form input[type="password"]:focus {
+.form .signup-form form input[type="text"]:focus,
+.form .signup-form form input[type="password"]:focus {
   border-color: #3498db;
 }
-.content-20 .signup-form form .site-link {
+.form .signup-form form .site-link {
   width: 100%;
   *zoom: 1;
 }
-.content-20 .signup-form form .site-link:before,
-.content-20 .signup-form form .site-link:after {
+.form .signup-form form .site-link:before,
+.form .signup-form form .site-link:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.content-20 .signup-form form .site-link:after {
+.form .signup-form form .site-link:after {
   clear: both;
 }
-.content-20 .signup-form form .site-link:before,
-.content-20 .signup-form form .site-link:after {
+.form .signup-form form .site-link:before,
+.form .signup-form form .site-link:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.content-20 .signup-form form .site-link:after {
+.form .signup-form form .site-link:after {
   clear: both;
 }
-.content-20 .signup-form form .site-link input[type="text"],
-.content-20 .signup-form form .site-link input[type="password"] {
+.form .signup-form form .site-link input[type="text"],
+.form .signup-form form .site-link input[type="password"] {
   width: 70%;
   float: left;
 }
-.content-20 .signup-form form .site-link b {
+.form .signup-form form .site-link b {
   float: right;
   width: 28%;
   text-align: right;
   line-height: 42px;
 }
-.content-20 .signup-form form .btn {
+.form .signup-form form .btn {
   height: 54px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -3176,58 +3176,58 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   width: 100%;
 }
 @media (max-width: 767px) {
-  .content-20 .signup-form form {
+  .form .signup-form form {
     display: block;
     margin: 0 -20px;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
-  .content-20 .signup-form form {
+  .form .signup-form form {
     width: 100%;
   }
-  .content-20 .signup-form form input[type="text"],
-  .content-20 .signup-form form input[type="password"] {
+  .form .signup-form form input[type="text"],
+  .form .signup-form form input[type="password"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     height: auto;
   }
-  .content-20 .signup-form form .form-group.pull-left {
+  .form .signup-form form .form-group.pull-left {
     margin-right: 0;
     width: 100%;
     float: none;
   }
-  .content-20 .signup-form form .form-group.pull-right {
+  .form .signup-form form .form-group.pull-right {
     margin-left: 0;
     width: 100%;
     float: none;
   }
-  .content-20 .signup-form form .site-link input[type="text"],
-  .content-20 .signup-form form .site-link input[type="password"] {
+  .form .signup-form form .site-link input[type="text"],
+  .form .signup-form form .site-link input[type="password"] {
     width: 62%;
   }
-  .content-20 .signup-form form .site-link b {
+  .form .signup-form form .site-link b {
     width: 35%;
   }
 }
 @media (max-width: 480px) {
-  .content-20 .signup-form form .site-link input[type="text"],
-  .content-20 .signup-form form .site-link input[type="password"] {
+  .form .signup-form form .site-link input[type="text"],
+  .form .signup-form form .site-link input[type="password"] {
     width: 55%;
   }
-  .content-20 .signup-form form .site-link b {
+  .form .signup-form form .site-link b {
     width: 44%;
   }
 }
-.content-20 .features {
+.form .features {
   margin-top: 40px;
   font-size: 14px;
   font-weight: normal;
   color: #95a5a6;
   font-family: 'Roboto', sans-serif;
 }
-.content-20 .features big {
+.form .features big {
   display: block;
   font-size: 22px;
   font-weight: normal;
@@ -3237,7 +3237,7 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   line-height: 32px;
   margin-bottom: 8px;
 }
-.content-20 .features h6 {
+.form .features h6 {
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
@@ -3245,12 +3245,12 @@ border: 3px solid rgba(255, 255, 255, 0.8);
   margin-top: 38px;
 }
 @media (max-width: 767px) {
-  .content-20 .features h6 {
+  .form .features h6 {
     margin-top: 0;
   }
 }
 @media (max-width: 767px) {
-  .content-20 .features > * + * {
+  .form .features > * + * {
     margin-top: 30px;
   }
 }
