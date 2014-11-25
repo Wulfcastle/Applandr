@@ -1167,7 +1167,10 @@ margin-bottom: 30px;
   filter: alpha(opacity=10000);
   opacity: 1;
   filter: alpha(opacity=100);
-    top: 19%;
+    top: 22.5%;
+    right:15%;
+    height:auto;
+    width:auto;
 }
 .header-19-sub .row {
   position: relative;
