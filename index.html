@@ -1,881 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="shortcut icon" href="static/favicon.png">
-
-        <link rel="stylesheet" href="static/css/bootstrap.css">
-        <link rel="stylesheet" href="static/css/components.css">
-        <!-- Using only with Flat-UI (free)-->
-        <link rel="stylesheet" href="static/css/icon-font.css">
-        <!-- end -->
-        <link rel="stylesheet" href="static/css/animations.css">
-        <link rel="stylesheet" href="static/css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
-
-        <title>Vue - A Material Design App Landing Page</title>
-    </head>
-
-    <body>
-        <div class="page-wrapper"><header class="header-19">
-    <div class="container">
-        <div class="row">
-            <div class="navbar col-sm-12" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle"></button>
-                    <a class="brand" href="#">
+   <head>
+      <meta charset="utf-8">
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <link rel="shortcut icon" href="static/favicon.png">
+      <link rel="stylesheet" href="static/css/bootstrap.css">
+      <link rel="stylesheet" href="static/css/components.css">
+      <!-- Using only with Flat-UI (free)-->
+      <link rel="stylesheet" href="static/css/icon-font.css">
+      <!-- end -->
+      <link rel="stylesheet" href="static/css/animations.css">
+      <link rel="stylesheet" href="static/css/style.css">
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+      <title>Vue - A Material Design App Landing Page</title>
+   </head>
+   <body>
+      <div class="page-wrapper">
+         <header class="header-19">
+            <div class="container">
+               <div class="row">
+                  <div class="navbar col-sm-12" role="navigation">
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle"></button>
+                        <a class="brand" href="#">
                         <img src="static/favicon.png" width="50" height="50" alt=""> <span>Vue - A Material Design App Landing Page</span>
-                    </a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#header">HEADER</a></li>
-                        <li><a href="#cards">CARDS</a></li>
-                        <li><a href="#feartures-list">FEATURES LIST</a></li>
-                        <li><a href="#switcher">SWITCHER</a></li>
-                        <li><a href="#slider">SLIDER</a></li>
-                        <li><a href="#selector">SELECTOR</a></li>
-                        <li><a href="#carousel">CAROUSEL</a></li>
-                        <li><a href="#crew">CREW</a></li>
-                        <li><a href="#pricing-tables">PRICING-TABLES</a></li>
-                        <li><a href="#form">FORM</a></li>
-                    </ul>
-                    <ul class="subnav">
-                        <li><a href="#c1">CONTENT-BLOCK-1</a></li>
-                        <li><a href="#c2">CONTENT-BLOCK-2</a></li>
-                        <li><a href="#c3">CONTENT-BLOCK-3</a></li>
-                        <li><a href="#banner">BANNER</a></li>
-
-                    </ul>
-                </div>
+                        </a>
+                     </div>
+                     <div class="navbar-collapse collapse">
+                        <ul class="nav">
+                           <li class="active"><a href="#header">HEADER</a></li>
+                           <li><a href="#cards">CARDS</a></li>
+                           <li><a href="#features-list">FEATURES LIST</a></li>
+                           <li><a href="#switcher">SWITCHER</a></li>
+                           <li><a href="#slider">SLIDER</a></li>
+                           <li><a href="#selector">SELECTOR</a></li>
+                           <li><a href="#carousel">CAROUSEL</a></li>
+                           <li><a href="#crew">CREW</a></li>
+                           <li><a href="#pricing-tables">PRICING-TABLES</a></li>
+                           <li><a href="#form">FORM</a></li>
+                        </ul>
+                        <ul class="subnav">
+                           <li><a href="#c1">CONTENT-BLOCK-1</a></li>
+                           <li><a href="#c2">CONTENT-BLOCK-2</a></li>
+                           <li><a href="#c3">CONTENT-BLOCK-3</a></li>
+                           <li><a href="#banner">BANNER</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</header>
-
-            <!-- Header -->
-            
-<section class="header-19-sub" id ="header">
-    <div class="background">&nbsp;</div>
-    <img class="hidden-xs" src="static/img/header/materialcalc.gif" alt="">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <h1>Introducing Vue. The Landing Page, that makes your app gorgeous</h1>
-                <p>What is Vue? Vue is an app landing page inspired by the recent release of Google's Material Design. Vue tightly integrates with Material Design to bring your app's landing page a look and feel that is far ahead of the current web design standards. Material Design is the next big trend in web design and Vue is the first to bring you it.</p>
-                <div class="btns">
-                    <a class="btn btn-primary" style="border: 2px solid #52A0AE;" href="#"><span>Buy Now</span></a>
-                    <a class="btn btn-primary" href="#"><span class="fui-android"> </span><span>Buy in Google Play</span></a>
-                    <a class="btn btn-primary" href="#"><span class="fui-apple"> </span><span>Buy in Google Apple</span></a>
-                    <a class="btn btn-primary" href="#"><span class="fui-microsoft"> </span> <span>Buy in Microsoft Market</span></a>
-                    <a class="btn btn-primary" href="#"><span class="fui-ovi"> </span><span>Buy in Ovi</span></a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</section>
-            
-            <!-- Content-Block-1 -->
-            
-<section class="content-2" id="c3">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>Multi useful components</h3>
-
-                <p>All of these components are made in the same style, and can easily be integrated into
-                    projects, allowing you to create hundreds of solutions for your future projects.
-                </p>
-
-                <div class="btns">
-                    <a class="btn btn-primary" href="#"><span class="fui-apple"> </span>Buy in Appstore</a>
-                    <a href="#"><b>Learn More</b></a>
-                </div>
-            </div>
-            <div class="col-sm-5 col-sm-offset-1">
-                <div class="player">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>  
-            
-            <!-- Content-Block-2 -->
-            
-            <section class="content-9" id="c2">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>Documentation</h3>
-
-                <p>Documentation is really important for a developer. Right from it you get to know the product.
-                    We tried to describe all the components and provide the set-up instructions.
-                </p>
-
-                <div class="row">
-                    <div class="col-sm-6 info">
-                        <h6>User Guide</h6>
-                        You’ll get a description of each component and learn how to connect and use them.
-                    </div>
-                    <div class="col-sm-6 info">
-                        <h6>Video Tutorials</h6>
-                        Video tutorials show you how to make a web site for your startup from design to code.
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-5 col-sm-offset-1 hidden-xs">
-                <img src="static/icons/browser-iphone@2x.png" width="300" height="300" alt="">
-            </div>
-        </div>
-    </div>
-</section>      
-            
-            
-            <!-- Cards -->
-            
-            
-            <section class="content-22 bg-midnight-blue" id="cards">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>It's Interactive</h3>
-
-                <p>This isn't your average theme. Vue is fully interactive through clever use of motion. The falling cards on the right can be customized to your own preferred look and feel by editing/adding your own image to the .PSD carb mockup and then saving over the current image. 
-                </p>
-                <a class="btn btn-clear" href="#">Sample Button</a>
-            </div>
-            <div class="col-sm-8">
-                <div class="img hidden-xs">
-                    <img src="static/img/content/boarded-1.png" width="834" height="713" alt="">
-                    <img src="static/img/content/board-2.png" width="974" height="533" alt="">
-                    <img src="static/img/content/boarded-1.png" width="512" height="549" alt="">
-                    <img src="static/img/content/board-4.png" width="653" height="367" alt="">
-                    <img src="static/img/content/board-5.png" width="952" height="267" alt="">
-                </div>
-                <div class="description">
-                    <h6>Smart Layers</h6>
-                    Just put the image with your app's inside the .PSD and save it over the current image to get your desired look and feel.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-           
-            <!-- Content-Block-3 -->
-            
-            
-            <section class="content-26 bg-clouds" id="c3">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h3>Features</h3>
-
-                <p class="lead">Vue comes bundled with over 10 custom icons which you can use along with FontAwesome to showcase your app and its features.</p>
-            </div>
-        </div>
-        <div class="row features">
-            <div class="col-sm-3">
-                <img src="static/icons/Chat@2x.png" alt="" width="100" height="100">
-                <h6>Feature 1</h6>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <img src="static/icons/Responsive1@2x.png" alt="" width="100" height="100">
-                <h6>Feature 2</h6>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </div>
-            <div class="col-sm-3 col-sm-offset-1">
-                <img src="static/icons/ps@2x.png" alt="" width="78" height="100">
-                <h6>Feature 3</h6>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </div>
-        </div>
-    </div>
-</section> 
-            
-            
-            <!-- Features-List -->
-
-            <section class="content-5" id="features-list">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h3>Vue utilizes FontAwesome </h3>
-                <br>
-                <p class="lead">This means you can use all of the icons from the FontAwesome library right within Vue! </p>
-            </div>
-        </div>
-        <div class="row features">
-            <div class="col-sm-4 col-sm-offset-2">
-                <span class="fui-cmd"> </span>
-                <h6>Quick</h6>
-
-                <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
-            </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <span class="fui-windows"> </span>
-                <h6>Responsive</h6>
-
-                <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
-            </div>
-        </div>
-        <div class="row features">
-            <div class="col-sm-4 col-sm-offset-2">
-                <span class="fui-upload"> </span>
-                <h6>Retina Ready</h6>
-
-                <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
-            </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <span class="fui-credit-card"> </span>
-                <h6>Cheap</h6>
-
-                <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
-            </div>
-        </div>
-    </div>
-</section>  
-            
-            <!-- Switcher -->
-            
-            
-            <section class="content-24 bg-midnight-blue" id="switcher">
-    <img class="image" src="static/img/devices/htc_one_music.png" alt="">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-6">
-                <div class="features features-clear">
-                    <div class="features-header">
-                        <div class="box active">
-                            <div class="fui-cmd"></div>
-                        </div>
-                        <div class="box">
-                            <div class="fui-mic"></div>
-                        </div>
-                        <div class="box">
-                            <div class="fui-user"></div>
-                        </div>
-                    </div>
-                    <div class="features-bodies">
-                        <div class="features-body active">
-                            <h3>Feature Switcher</h3>
-
-                            <p>Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can change the icons if you like or add more as you please.  Also take note that the image on the left can be recreated using the Mockup .PSD's provided with the HTML Template
-                            </p>
-                            <a class="btn btn-clear" href="#">TRY IT NOW</a>
-                        </div>
-                        <div class="features-body">
-                            <h3>Feature 2</h3>
-
-                            <p>Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can use these to create some of the best looking sliders/carousels. Also take note that the image on the left can be recreated using the Mockup .PSD's provided with the HTML Template
-                            </p>
-                            <a class="btn btn-clear" href="#">TRY IT NOW</a>
-                        </div>
-                        <div class="features-body">
-                            <h3>Feature 3</h3>
-
-                            <p>Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can use these to create some of the best looking sliders/carousels. Also take note that the image on the left can be recreated using the Mockup .PSD's provided with the HTML Template
-                            </p>
-                            <a class="btn btn-clear" href="#">TRY IT NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+         </header>
           
-            
-            <!-- Slider -->
-            
-            
-<section class="content-35" id="slider">
-    <ul class="content-35-customPager">
-        <li class="menuicon"><span aria-hidden="true" class="fui-list"></span></li>
-        <li><a data-slide-index="0">App Info</a></li>
-        <li><a data-slide-index="1">Your App</a></li>
-        <li><a data-slide-index="2">More</a></li>
-    </ul>
-    <ul class="content-35-slider">
-         <li class="content-35-slider-item">
-            <div class="background doc">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div>
-                                <img src="static/img/animation/swipe.gif" alt="">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          
+         <!-- Header -->
+          
+         <section class="header-19-sub" id ="header">
+            <div class="background">&nbsp;</div>
+            <img class="hidden-xs" src="static/img/header/materialcalc.gif" alt="">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 col-sm-offset-5">
-                        <h2>App Details</h2>
-                        <p class="lead">Showcase your app in it's best form, why not use these animation sliders to help bring out the best of your app? Click on the icons above to navigate through the slider.</p>
-                        <a href="#" class="ask-question">Info: </a>
-                        <dl class="tech-info">
-                            <dt>Release Date</dt>
-                            <dd>November 20, 2014</dd>
-                            <dt>Format</dt>
-                            <dd>APK</dd>
-                            <dt>Size</dt>
-                            <dd>20 MB, Ziped</dd>
-                            <dt>Consists</dt>
-                            <dd>
-                                Home Screen
-                                <br>Camera 
-                                <br>Login Screen
-                            </dd>
-                            <dt>Android Version</dt>
-                            <dd>5.0</dd>
-                            <dt>License</dt>
-                            <dd>GPL License</dd>
-                        </dl>
-                    </div>
-                </div>
+               <div class="row">
+                  <div class="col-sm-7">
+                     <h1>Introducing Vue. The Landing Page, that makes your app gorgeous</h1>
+                     <p>What is Vue? Vue is an app landing page inspired by the recent release of Google's Material Design. Vue tightly integrates with Material Design to bring your app's landing page a look and feel that is far ahead of the current web design standards. Material Design is the next big trend in web design and Vue is the first to bring you it.</p>
+                     <div class="btns">
+                        <a class="btn btn-primary" style="border: 2px solid #52A0AE;" href="#"><span>Buy Now</span></a>
+                        <a class="btn btn-primary" href="#"><span class="fui-android"> </span><span>Buy in Google Play</span></a>
+                        <a class="btn btn-primary" href="#"><span class="fui-apple"> </span><span>Buy in Google Apple</span></a>
+                        <a class="btn btn-primary" href="#"><span class="fui-microsoft"> </span> <span>Buy in Microsoft Market</span></a>
+                        <a class="btn btn-primary" href="#"><span class="fui-ovi"> </span><span>Buy in Ovi</span></a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </li>
-        <li class="content-35-slider-item">
-            <div class="background bread">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div>
-                                <img src="static/img/animation/resizable.gif" alt="">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+         </section>
+          
+          
+         <!-- Content-Block-1 -->
+          
+         <section class="content-2" id="c3">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 col-sm-offset-5">
-                        <h2>App History</h2>
-                        <p class="lead">Showcase your app in it's best form, why not use these animation sliders to help bring out the best of your app?</p>
-                        <div class="row columns">
-                            <div class="col-sm-6">
-                                <a href="#">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <h3>Multi useful components</h3>
+                     <p>All of these components are made in the same style, and can easily be integrated into
+                        projects, allowing you to create hundreds of solutions for your future projects.
+                     </p>
+                     <div class="btns">
+                        <a class="btn btn-primary" href="#"><span class="fui-apple"> </span>Buy in Appstore</a>
+                        <a href="#"><b>Learn More</b></a>
+                     </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1">
+                     <div class="player">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+          
+          
+         <!-- Content-Block-2 -->
+          
+         <section class="content-9" id="c2">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <h3>Documentation</h3>
+                     <p>Documentation is really important for a developer. Right from it you get to know the product.
+                        We tried to describe all the components and provide the set-up instructions.
+                     </p>
+                     <div class="row">
+                        <div class="col-sm-6 info">
+                           <h6>User Guide</h6>
+                           You’ll get a description of each component and learn how to connect and use them.
+                        </div>
+                        <div class="col-sm-6 info">
+                           <h6>Video Tutorials</h6>
+                           Video tutorials show you how to make a web site for your startup from design to code.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-1 hidden-xs">
+                     <img src="static/icons/browser-iphone@2x.png" width="300" height="300" alt="">
+                  </div>
+               </div>
+            </div>
+         </section>
+          
+          
+         <!-- Cards -->
+          
+         <section class="content-22 bg-midnight-blue" id="cards">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <h3>It's Interactive</h3>
+                     <p>This isn't your average theme. Vue is fully interactive through clever use of motion. The falling cards on the right can be customized to your own preferred look and feel by editing/adding your own image to the .PSD carb mockup and then saving over the current image. 
+                     </p>
+                     <a class="btn btn-clear" href="#">Sample Button</a>
+                  </div>
+                  <div class="col-sm-8">
+                     <div class="img hidden-xs">
+                        <img src="static/img/content/boarded-1.png" width="834" height="713" alt="">
+                        <img src="static/img/content/board-2.png" width="974" height="533" alt="">
+                        <img src="static/img/content/boarded-1.png" width="512" height="549" alt="">
+                        <img src="static/img/content/board-4.png" width="653" height="367" alt="">
+                        <img src="static/img/content/board-5.png" width="952" height="267" alt="">
+                     </div>
+                     <div class="description">
+                        <h6>Smart Layers</h6>
+                        Just put the image with your app's inside the .PSD and save it over the current image to get your desired look and feel.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+          
+          
+         <!-- Content-Block-3 -->
+          
+         <section class="content-26 bg-clouds" id="c3">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                     <h3>Features</h3>
+                     <p class="lead">Vue comes bundled with over 10 custom icons which you can use along with FontAwesome to showcase your app and its features.</p>
+                  </div>
+               </div>
+               <div class="row features">
+                  <div class="col-sm-3">
+                     <img src="static/icons/Chat@2x.png" alt="" width="100" height="100">
+                     <h6>Feature 1</h6>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </div>
+                  <div class="col-sm-4 col-sm-offset-1">
+                     <img src="static/icons/Responsive1@2x.png" alt="" width="100" height="100">
+                     <h6>Feature 2</h6>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </div>
+                  <div class="col-sm-3 col-sm-offset-1">
+                     <img src="static/icons/ps@2x.png" alt="" width="78" height="100">
+                     <h6>Feature 3</h6>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </div>
+               </div>
+            </div>
+         </section>
+          
+          
+         <!-- Features-List -->
+          
+         <section class="content-5" id="features-list">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                     <h3>Vue utilizes FontAwesome </h3>
+                     <br>
+                     <p class="lead">This means you can use all of the icons from the FontAwesome library right within Vue! </p>
+                  </div>
+               </div>
+               <div class="row features">
+                  <div class="col-sm-4 col-sm-offset-2">
+                     <span class="fui-cmd"> </span>
+                     <h6>Quick</h6>
+                     <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
+                  </div>
+                  <div class="col-sm-4 col-sm-offset-1">
+                     <span class="fui-windows"> </span>
+                     <h6>Responsive</h6>
+                     <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
+                  </div>
+               </div>
+               <div class="row features">
+                  <div class="col-sm-4 col-sm-offset-2">
+                     <span class="fui-upload"> </span>
+                     <h6>Retina Ready</h6>
+                     <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
+                  </div>
+                  <div class="col-sm-4 col-sm-offset-1">
+                     <span class="fui-credit-card"> </span>
+                     <h6>Cheap</h6>
+                     <p>A sample feature here, just to help you showcase your app better. You can never oversell your product.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+          
+          
+         <!-- Switcher -->
+          
+         <section class="content-24 bg-midnight-blue" id="switcher">
+            <img class="image" src="static/img/devices/htc_one_music.png" alt="">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6 col-sm-offset-6">
+                     <div class="features features-clear">
+                        <div class="features-header">
+                           <div class="box active">
+                              <div class="fui-cmd"></div>
+                           </div>
+                           <div class="box">
+                              <div class="fui-mic"></div>
+                           </div>
+                           <div class="box">
+                              <div class="fui-user"></div>
+                           </div>
+                        </div>
+                        <div class="features-bodies">
+                           <div class="features-body active">
+                              <h3>Feature Switcher</h3>
+                              <p>Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can change the icons if you like or add more as you please.  Also take note that the image on the left can be recreated using the Mockup .PSD's provided with the HTML Template
+                              </p>
+                              <a class="btn btn-clear" href="#">TRY IT NOW</a>
+                           </div>
+                           <div class="features-body">
+                              <h3>Feature 2</h3>
+                              <p>Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can use these to create some of the best looking sliders/carousels. Also take note that the image on the left can be recreated using the Mockup .PSD's provided with the HTML Template
+                              </p>
+                              <a class="btn btn-clear" href="#">TRY IT NOW</a>
+                           </div>
+                           <div class="features-body">
+                              <h3>Feature 3</h3>
+                              <p>Use this component to create a tabbed caruosel triggered by clicking on the above icons. You can use these to create some of the best looking sliders/carousels. Also take note that the image on the left can be recreated using the Mockup .PSD's provided with the HTML Template
+                              </p>
+                              <a class="btn btn-clear" href="#">TRY IT NOW</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Slider -->
+         <section class="content-35" id="slider">
+            <ul class="content-35-customPager">
+               <li class="menuicon"><span aria-hidden="true" class="fui-list"></span></li>
+               <li><a data-slide-index="0">App Info</a></li>
+               <li><a data-slide-index="1">Your App</a></li>
+               <li><a data-slide-index="2">More</a></li>
+            </ul>
+            <ul class="content-35-slider">
+               <li class="content-35-slider-item">
+                  <div class="background doc">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-sm-4">
+                              <div>
+                                 <img src="static/img/animation/swipe.gif" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm-5 col-sm-offset-5">
+                           <h2>App Details</h2>
+                           <p class="lead">Showcase your app in it's best form, why not use these animation sliders to help bring out the best of your app? Click on the icons above to navigate through the slider.</p>
+                           <a href="#" class="ask-question">Info: </a>
+                           <dl class="tech-info">
+                              <dt>Release Date</dt>
+                              <dd>November 20, 2014</dd>
+                              <dt>Format</dt>
+                              <dd>APK</dd>
+                              <dt>Size</dt>
+                              <dd>20 MB, Ziped</dd>
+                              <dt>Consists</dt>
+                              <dd>
+                                 Home Screen
+                                 <br>Camera 
+                                 <br>Login Screen
+                              </dd>
+                              <dt>Android Version</dt>
+                              <dd>5.0</dd>
+                              <dt>License</dt>
+                              <dd>GPL License</dd>
+                           </dl>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="content-35-slider-item">
+                  <div class="background bread">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-sm-4">
+                              <div>
+                                 <img src="static/img/animation/resizable.gif" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm-5 col-sm-offset-5">
+                           <h2>App History</h2>
+                           <p class="lead">Showcase your app in it's best form, why not use these animation sliders to help bring out the best of your app?</p>
+                           <div class="row columns">
+                              <div class="col-sm-6">
+                                 <a href="#">
                                     <img src="static/img/content/thumbnail-crumbs.jpg" alt="">
                                     <b>
-                                        <strong>Crumbs</strong>
-                                        <span class="svgIcon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 32 32"><path d="M30 0h-16c-1.105 0-2 0.894-2 2v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-16c0-1.105-0.895-2-2-2zM28 16h-12v-12h12v12zM16 28h-12v-12h4v-4h-6c-1.105 0-2 0.895-2 2v16c0 1.105 0.894 2 2 2h16c1.105 0 2-0.895 2-2v-6h-4v4z" fill="#eaeaea"/></svg>
-                                        </span>
+                                       <strong>Crumbs</strong>
+                                       <span class="svgIcon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 32 32">
+                                             <path d="M30 0h-16c-1.105 0-2 0.894-2 2v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-16c0-1.105-0.895-2-2-2zM28 16h-12v-12h12v12zM16 28h-12v-12h4v-4h-6c-1.105 0-2 0.895-2 2v16c0 1.105 0.894 2 2 2h16c1.105 0 2-0.895 2-2v-6h-4v4z" fill="#eaeaea"/>
+                                          </svg>
+                                       </span>
                                     </b>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-                                </a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="#">
+                                 </a>
+                              </div>
+                              <div class="col-sm-6">
+                                 <a href="#">
                                     <img src="static/img/backgrounds/march.jpg" alt="">
                                     <b>
-                                        <strong>Hipstafood</strong>
-                                        <span class="svgIcon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 32 32"><path d="M30 0h-16c-1.105 0-2 0.894-2 2v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-16c0-1.105-0.895-2-2-2zM28 16h-12v-12h12v12zM16 28h-12v-12h4v-4h-6c-1.105 0-2 0.895-2 2v16c0 1.105 0.894 2 2 2h16c1.105 0 2-0.895 2-2v-6h-4v4z" fill="#eaeaea"/></svg>
-                                        </span>
+                                       <strong>Hipstafood</strong>
+                                       <span class="svgIcon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 32 32">
+                                             <path d="M30 0h-16c-1.105 0-2 0.894-2 2v16c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-16c0-1.105-0.895-2-2-2zM28 16h-12v-12h12v12zM16 28h-12v-12h4v-4h-6c-1.105 0-2 0.895-2 2v16c0 1.105 0.894 2 2 2h16c1.105 0 2-0.895 2-2v-6h-4v4z" fill="#eaeaea"/>
+                                          </svg>
+                                       </span>
                                     </b>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-                                </a>
-                            </div>
+                                 </a>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="content-35-slider-item">
-            <div class="background landscape">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div>
-                                <img src="static/img/animation/drawer.gif" alt="">
-                            </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="content-35-slider-item">
+                  <div class="background landscape">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-sm-4">
+                              <div>
+                                 <img src="static/img/animation/drawer.gif" alt="">
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm-5 col-sm-offset-5">
+                           <h2>More Than Just an App</h2>
+                           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                           <div class="row columns">
+                              <div class="col-sm-6">
+                                 <h3>Something here...</h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                              </div>
+                              <div class="col-sm-6">
+                                 <h3>Something else here...</h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                              </div>
+                           </div>
+                           <div class="contact">"This is a good space to insert a quote about your app"</div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </section>
+          
+          
+         <!-- Selector -->
+          
+         <section class="content-30" id="selector">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 col-sm-offset-5">
-                        <h2>More Than Just an App</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        <div class="row columns">
-                            <div class="col-sm-6">
-                                <h3>Something here...</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <h3>Something else here...</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </div>
-                        </div>
-                        <div class="contact">"This is a good space to insert a quote about your app"</div>
-                    </div>
-                </div>
+               <div class="row features">
+                  <div class="col-sm-3 box-1">
+                     <div class="description-top">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-tl@2x.png" width="61" height="97" alt="">
+                     </div>
+                     <div class="img">
+                        <img src="static/img/content/screen-1-bw@2x.png" width="220" height="391" alt="">
+                        <img src="static/img/content/screen-1@2x.png" width="220" height="391" alt="">
+                     </div>
+                     <div class="description-bottom">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-bl@2x.png" width="97" height="110" alt="">
+                     </div>
+                  </div>
+                  <div class="col-sm-3 box-2">
+                     <div class="description-top">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-tl@2x.png" width="61" height="97" alt="">
+                     </div>
+                     <div class="img">
+                        <img src="static/img/content/screen-2-bw@2x.png" width="220" height="391" alt="">
+                        <img src="static/img/content/screen-2@2xc-30.png" width="220" height="391" alt="">
+                     </div>
+                     <div class="description-bottom">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-br@2x.png" width="97" height="110" alt="">
+                     </div>
+                  </div>
+                  <div class="col-sm-3 box-3">
+                     <div class="description-top">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-tr@2x.png" width="61" height="97" alt="">
+                     </div>
+                     <div class="img">
+                        <img src="static/img/content/screen-3-bw@2x.png" width="220" height="391" alt="">
+                        <img src="static/img/content/screen-3@2x.png" width="220" height="391" alt="">
+                     </div>
+                     <div class="description-bottom">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-bl@2x.png" width="97" height="110" alt="">
+                     </div>
+                  </div>
+                  <div class="col-sm-3 box-4">
+                     <div class="description-top">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-tr@2x.png" width="61" height="97" alt="">
+                     </div>
+                     <div class="img">
+                        <img src="static/img/content/screen-4-bw@2x.png" width="220" height="391" alt="">
+                        <img src="static/img/content/screen-4@2x.png" width="220" height="391" alt="">
+                     </div>
+                     <div class="description-bottom">
+                        <h6>Demonstrate your app's interface</h6>
+                        Just use this handy component to show your website's viewers your app's interfact or something else in its best light
+                        <img src="static/img/content/arrow-br@2x.png" width="97" height="110" alt="">
+                     </div>
+                  </div>
+               </div>
             </div>
-        </li>
-       
-    </ul>
-</section>
-            
-            
-            <!-- Selector -->
-            
-<section class="content-30" id="selector">
-    <div class="container">
-        <div class="row features">
-            <div class="col-sm-3 box-1">
-                <div class="description-top">
-                    <h6>Demonstrate your app's interface</h6>
-                    Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-tl@2x.png" width="61" height="97" alt="">
-                </div>
-                <div class="img">
-                    <img src="static/img/content/screen-1-bw@2x.png" width="220" height="391" alt="">
-                    <img src="static/img/content/screen-1@2x.png" width="220" height="391" alt="">
-                </div>
-                <div class="description-bottom">
-                    <h6>Demonstrate your app's interface</h6>
-                    Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-bl@2x.png" width="97" height="110" alt="">
-                </div>
+         </section>
+          
+          
+         <!-- Carousel -->
+          
+         <section class="content-10" id="carousel">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <h3>It comes with smartphone mock-ups to display your apps</h3>
+                     <p>Select between over 20 different .PSD Mockups of popular smartphones from the 3 major OS'. There are mockups of phones from Android, iOS and Windows Phone such as the Samsung Galaxy S5, LG G3, and the iPhone 6. Click the caruosel on the right to see just 3 of them in actions</p>
+                     <div class="features">
+                        <div class="box">
+                           <img src="static/icons/retina@2x.png" width="100" height="100" alt="">
+                           <h6>Feature A</h6>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="box">
+                           <img src="static/icons/Gift-Box@2x.png" width="100" height="100" alt="">
+                           <h6>Feature B</h6>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="box">
+                           <img src="static/icons/time@2x.png" width="100" height="100" alt="">
+                           <h6>Feature C</h6>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-sm-offset-2 text-center">
+                     <div id="c-10_myCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                           <div class="item active">
+                              <img src="static/img/devices/s5_music.png" width="500" height="867" alt="">
+                           </div>
+                           <div class="item">
+                              <img src="static/img/devices/iphone6.png" width="439" height="867" alt="">
+                           </div>
+                           <div class="item">
+                              <img src="static/img/devices/surface_pro.png" width="545" height="800" alt="">
+                           </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                           <li data-target="#c-10_myCarousel" data-slide-to="0" class="active"></li>
+                           <li data-target="#c-10_myCarousel" data-slide-to="1"></li>
+                           <li data-target="#c-10_myCarousel" data-slide-to="2"></li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="col-sm-3 box-2">
-                <div class="description-top">
-                    <h6>Demonstrate your app's interface</h6>
-                    Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-tl@2x.png" width="61" height="97" alt="">
-                </div>
-                <div class="img">
-                    <img src="static/img/content/screen-2-bw@2x.png" width="220" height="391" alt="">
-                    <img src="static/img/content/screen-2@2xc-30.png" width="220" height="391" alt="">
-                </div>
-                <div class="description-bottom">
-                    <h6>Demonstrate your app's interface</h6>
-                   Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-br@2x.png" width="97" height="110" alt="">
-                </div>
+         </section>
+         <!-- Banner -->
+         <section class="content-36" id="banner">
+            <div class="container">
+               <h2>This is a great looking banner. Use this to broadcast any message you'd like</h2>
+               <a class="btn btn-success" href="#">Click Me</a>
+               <p>A little subtext always comes in handy, especially when it looks this good.</p>
             </div>
-            <div class="col-sm-3 box-3">
-                <div class="description-top">
-                    <h6>Demonstrate your app's interface</h6>
-                    Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-tr@2x.png" width="61" height="97" alt="">
-                </div>
-                <div class="img">
-                    <img src="static/img/content/screen-3-bw@2x.png" width="220" height="391" alt="">
-                    <img src="static/img/content/screen-3@2x.png" width="220" height="391" alt="">
-                </div>
-                <div class="description-bottom">
-                    <h6>Demonstrate your app's interface</h6>
-                    Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-bl@2x.png" width="97" height="110" alt="">
-                </div>
+         </section>
+          
+          
+         <!-- Crew -->
+          
+         <section class="crew-4" id="crew">
+            <div class="container">
+               <h3 >The Team<br/>
+                  Meet the crew behind your app. Use this to show a quick bio of your team members along with social links.
+               </h3>
+               <div class="members">
+                  <div class="member-wrapper">
+                     <div class="member">
+                        <div class="photo-wrapper">
+                           <div class="photo"><img src="static/img/crew/vladimir-k.png" alt=""></div>
+                           <div class="overlay">
+                              <a href="#"><span class="fui-vimeo"></span></a>
+                              <a href="#"><span class="fui-facebook"></span></a>
+                              <a href="#"><span class="fui-twitter"></span></a>
+                           </div>
+                        </div>
+                        <div class="info">
+                           <div class="name">Vladimir Kudinov</div>
+                           <b>Designer</b> who makes easy to change and easy to create new elements.
+                           <div class="contacts">
+                              <a href="#">http://google.com</a><br>
+                              <a href="#">@Twitter</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="member-wrapper">
+                     <div class="member">
+                        <div class="photo-wrapper">
+                           <div class="photo"><img src="static/img/crew/sergey-s.png" alt=""></div>
+                           <div class="overlay">
+                              <a href="#"><span class="fui-vimeo"></span></a>
+                              <a href="#"><span class="fui-facebook"></span></a>
+                              <a href="#"><span class="fui-twitter"></span></a>
+                           </div>
+                        </div>
+                        <div class="info">
+                           <div class="name">Sergey Shmidt</div>
+                           <b>Designer</b> who makes easy to change and easy to create new elements.
+                           <div class="contacts">
+                              <a href="#">http://uber.com</a><br>
+                              <a href="#">@Uber</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="member-wrapper">
+                     <div class="member">
+                        <div class="photo-wrapper">
+                           <div class="photo"><img src="static/img/crew/adrian-v.png" alt=""></div>
+                           <div class="overlay">
+                              <a href="#"><span class="fui-vimeo"></span></a>
+                              <a href="#"><span class="fui-facebook"></span></a>
+                              <a href="#"><span class="fui-twitter"></span></a>
+                           </div>
+                        </div>
+                        <div class="info">
+                           <div class="name">Adrian Valeanu</div>
+                           <b>Designer</b> who makes easy to change and easy to create new elements.
+                           <div class="contacts">
+                              <a href="#">http://techcrunch.com</a><br>
+                              <a href="#">@TCrunch</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="col-sm-3 box-4">
-                <div class="description-top">
-                    <h6>Demonstrate your app's interface</h6>
-                    Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-tr@2x.png" width="61" height="97" alt="">
-                </div>
-                <div class="img">
-                    <img src="static/img/content/screen-4-bw@2x.png" width="220" height="391" alt="">
-                    <img src="static/img/content/screen-4@2x.png" width="220" height="391" alt="">
-                </div>
-                <div class="description-bottom">
-                    <h6>Demonstrate your app's interface</h6>
-                    Just use this handy component to show your website's viewers your app's interfact or something else in its best light
-                    <img src="static/img/content/arrow-br@2x.png" width="97" height="110" alt="">
-                </div>
+            <!--/.container-->
+         </section>
+          
+          
+         <!-- Pricing Tables -->
+          
+         <section class="price-5" id="pricing-tables">
+            <div class="container">
+               <div class="plans">
+                  <div class="plan">
+                     <div class="title">
+                        <div class="price">
+                           <small>$</small>
+                           0
+                        </div>
+                        Novice
+                     </div>
+                     <div>
+                        <div class="description">
+                           <div class="description-box">
+                              <big>10,000 uploads</big>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                           <div class="description-box">
+                              <big>10 photos per month</big>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                        </div>
+                        <div class="description-more">
+                           <span class="fui-cmd"></span>
+                           <big>Ads</big>
+                           <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           <a class="btn btn-primary" href="#">Change to this Plan</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="plan plan-2">
+                     <div class="title">
+                        <div class="price">
+                           <small>$</small>
+                           29
+                        </div>
+                        Intermediate
+                     </div>
+                     <div>
+                        <div class="description">
+                           <div class="description-box">
+                              <big>Unlimited uploads</big>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                           <div class="description-box">
+                              <big>10 photos per month</big>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                        </div>
+                        <div class="description-more">
+                           <span class="fui-cmd"></span>
+                           <big>Ads</big>
+                           <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           <a class="btn btn-primary" href="#">Change to this Plan</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="plan">
+                     <div class="title">
+                        <div class="price">
+                           <small>$</small>
+                           50
+                        </div>
+                        Advanced
+                     </div>
+                     <div>
+                        <div class="description">
+                           <div class="description-box">
+                              <big>Unlimited Uploads</big>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                           <div class="description-box">
+                              <big>5,000 photos per month</big>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                        </div>
+                        <div class="description-more">
+                           <span class="fui-cmd"></span>
+                           <big>No ads</big>
+                           <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           <a class="btn btn-primary" href="#">Change to this Plan</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-            
-            
-            
-            <!-- Carousel -->
-            
-            
-            <section class="content-10" id="carousel">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>It comes with smartphone mock-ups to display your apps</h3>
-
-                <p>Select between over 20 different .PSD Mockups of popular smartphones from the 3 major OS'. There are mockups of phones from Android, iOS and Windows Phone such as the Samsung Galaxy S5, LG G3, and the iPhone 6. Click the caruosel on the right to see just 3 of them in actions</p>
-
-                <div class="features">
-                    <div class="box">
-                        <img src="static/icons/retina@2x.png" width="100" height="100" alt="">
-                        <h6>Feature A</h6>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="box">
-                        <img src="static/icons/Gift-Box@2x.png" width="100" height="100" alt="">
-                        <h6>Feature B</h6>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="box">
-                        <img src="static/icons/time@2x.png" width="100" height="100" alt="">
-                        <h6>Feature C</h6>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-sm-offset-2 text-center">
-                <div id="c-10_myCarousel" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="static/img/devices/s5_music.png" width="500" height="867" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="static/img/devices/iphone6.png" width="439" height="867" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="static/img/devices/surface_pro.png" width="545" height="800" alt="">
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#c-10_myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#c-10_myCarousel" data-slide-to="1"></li>
-                        <li data-target="#c-10_myCarousel" data-slide-to="2"></li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-            
-            <!-- Banner -->
-            
-<section class="content-36" id="banner">
-    <div class="container">
-        <h2>This is a great looking banner. Use this to broadcast any message you'd like</h2>
-        <a class="btn btn-success" href="#">Click Me</a>
-        <p>A little subtext always comes in handy, especially when it looks this good.</p>
-    </div>
-</section>
-            
-            <!-- Crew -->
-            
-            <section class="crew-4" id="crew">
-    <div class="container">
-        <h3 >The Team<br/>
-           Meet the crew behind your app. Use this to show a quick bio of your team members along with social links.</h3>
-
-        <div class="members">
-            <div class="member-wrapper">
-                <div class="member">
-                    <div class="photo-wrapper">
-                        <div class="photo"><img src="static/img/crew/vladimir-k.png" alt=""></div>
-                        <div class="overlay">
-                            <a href="#"><span class="fui-vimeo"></span></a>
-                            <a href="#"><span class="fui-facebook"></span></a>
-                            <a href="#"><span class="fui-twitter"></span></a>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="name">Vladimir Kudinov</div>
-                        <b>Designer</b> who makes easy to change and easy to create new elements.
-
-                        <div class="contacts">
-                            <a href="#">http://google.com</a><br>
-                            <a href="#">@Twitter</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="member-wrapper">
-                <div class="member">
-                    <div class="photo-wrapper">
-                        <div class="photo"><img src="static/img/crew/sergey-s.png" alt=""></div>
-                        <div class="overlay">
-                            <a href="#"><span class="fui-vimeo"></span></a>
-                            <a href="#"><span class="fui-facebook"></span></a>
-                            <a href="#"><span class="fui-twitter"></span></a>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="name">Sergey Shmidt</div>
-                        <b>Designer</b> who makes easy to change and easy to create new elements.
-
-                        <div class="contacts">
-                            <a href="#">http://uber.com</a><br>
-                            <a href="#">@Uber</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="member-wrapper">
-                <div class="member">
-                    <div class="photo-wrapper">
-                        <div class="photo"><img src="static/img/crew/adrian-v.png" alt=""></div>
-                        <div class="overlay">
-                            <a href="#"><span class="fui-vimeo"></span></a>
-                            <a href="#"><span class="fui-facebook"></span></a>
-                            <a href="#"><span class="fui-twitter"></span></a>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="name">Adrian Valeanu</div>
-                        <b>Designer</b> who makes easy to change and easy to create new elements.
-
-                        <div class="contacts">
-                            <a href="#">http://techcrunch.com</a><br>
-                            <a href="#">@TCrunch</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/.container-->
-</section> 
-            
-            
-            
-            <!-- Pricing Tables -->
-            
-            
-<section class="price-5" id="pricing-tables">
-    <div class="container">
-        <div class="plans">
-            <div class="plan">
-                <div class="title">
-                    <div class="price">
-                        <small>$</small>
-                        0
-                    </div>
-                    Novice
-                </div>
-
-                <div>
-                    <div class="description">
-                        <div class="description-box">
-                            <big>10,000 uploads</big>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <div class="description-box">
-                            <big>10 photos per month</big>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-
-                    <div class="description-more">
-                        <span class="fui-cmd"></span>
-                        <big>Ads</big>
-
-                        <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a class="btn btn-primary" href="#">Change to this Plan</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="plan plan-2">
-                <div class="title">
-                    <div class="price">
-                        <small>$</small>
-                        29
-                    </div>
-                    Intermediate
-                </div>
-
-                <div>
-                    <div class="description">
-                        <div class="description-box">
-                            <big>Unlimited uploads</big>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <div class="description-box">
-                            <big>10 photos per month</big>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-
-                    <div class="description-more">
-                        <span class="fui-cmd"></span>
-                        <big>Ads</big>
-
-                        <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a class="btn btn-primary" href="#">Change to this Plan</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="plan">
-                <div class="title">
-                    <div class="price">
-                        <small>$</small>
-                        50
-                    </div>
-                    Advanced
-                </div>
-
-                <div>
-                    <div class="description">
-                        <div class="description-box">
-                            <big>Unlimited Uploads</big>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <div class="description-box">
-                            <big>5,000 photos per month</big>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-
-                    <div class="description-more">
-                        <span class="fui-cmd"></span>
-                        <big>No ads</big>
-
-                        <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a class="btn btn-primary" href="#">Change to this Plan</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/.container-->
-</section>
-            
-            <!-- Form -->
-            
-            
-            <section class="content-20 v-center bg-midnight-blue" id="form">
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h3>Get pre-liminary access to your app</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="signup-form">
-                        <form class="clearfix">
-                            <div class="form-group">
-                                <label>What is your e-mail?</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="clearfix">
-                                <div class="form-group pull-left">
+            <!--/.container-->
+         </section>
+          
+          
+         <!-- Form -->
+          
+         <section class="content-20 v-center bg-midnight-blue" id="form">
+            <div>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <h3>Get pre-liminary access to your app</h3>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="signup-form">
+                           <form class="clearfix">
+                              <div class="form-group">
+                                 <label>What is your e-mail?</label>
+                                 <input type="text" class="form-control">
+                              </div>
+                              <div class="clearfix">
+                                 <div class="form-group pull-left">
                                     <label>Password</label>
                                     <input type="password" class="form-control">
-                                </div>
-                                <div class="form-group pull-right">
+                                 </div>
+                                 <div class="form-group pull-right">
                                     <label>Confirmation</label>
                                     <input type="password" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Your Site Link</label>
-                                <div class="site-link">
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <label>Your Site Link</label>
+                                 <div class="site-link">
                                     <input type="text" class="form-control">
                                     <b>.startup.com</b>
-                                </div>
-                            </div>
-                            <button class="btn btn-huge btn-info">Sign Up</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-sm-offset-1 features">
-                    <big>This component is a form which you can use for Registration, Contact, Sign-Up, Login etc. You can customize it to your heart's desires.</big>
-
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h6>Something here...</h6>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                 </div>
+                              </div>
+                              <button class="btn btn-huge btn-info">Sign Up</button>
+                           </form>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h6>Another something here...</h6>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     </div>
+                     <div class="col-sm-4 col-sm-offset-1 features">
+                        <big>This component is a form which you can use for Registration, Contact, Sign-Up, Login etc. You can customize it to your heart's desires.</big>
+                        <div class="row">
+                           <div class="col-sm-8">
+                              <h6>Something here...</h6>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="row">
+                           <div class="col-sm-8">
+                              <h6>Another something here...</h6>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-            
-            <!-- Contact -->
-            
-            
-            <section class="contacts-4" id="contacts">
-    <div class="container">
-        <div class="content">
-            <div class="social-btns">
-                <a href="#">
-                    <div class="fui-twitter"></div>
-                    <div class="fui-twitter"></div>
-                </a>
-                <a href="#">
-                    <div class="fui-facebook"></div>
-                    <div class="fui-facebook"></div>
-                </a>
-                <a href="#">
-                    <div class="fui-vimeo"></div>
-                    <div class="fui-vimeo"></div>
-                </a>
+         </section>
+          
+          
+         <!-- Contact -->
+          
+         <section class="contacts-4" id="contacts">
+            <div class="container">
+               <div class="content">
+                  <div class="social-btns">
+                     <a href="#">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                     </a>
+                     <a href="#">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                     </a>
+                     <a href="#">
+                        <div class="fui-vimeo"></div>
+                        <div class="fui-vimeo"></div>
+                     </a>
+                  </div>
+                  <h3>Get in touch with us</h3>
+                  <div class="links">
+                     <a href="#">vue@sauce.com</a>
+                  </div>
+               </div>
             </div>
-            <h3>Get in touch with us</h3>
-            <div class="links">
-                <a href="#">vue@sauce.com</a>
+         </section>
+         <footer class="footer-2 bg-midnight-blue">
+            <div class="container">
+               <div class="social-btns pull-right">
+                  <a href="#">
+                     <div class="fui-vimeo"></div>
+                     <div class="fui-vimeo"></div>
+                  </a>
+                  <a href="#">
+                     <div class="fui-facebook"></div>
+                     <div class="fui-facebook"></div>
+                  </a>
+                  <a href="#">
+                     <div class="fui-twitter"></div>
+                     <div class="fui-twitter"></div>
+                  </a>
+               </div>
             </div>
-        </div>
-    </div>
-</section><footer class="footer-2 bg-midnight-blue">
-    <div class="container">
-        <div class="social-btns pull-right">
-            <a href="#">
-                <div class="fui-vimeo"></div>
-                <div class="fui-vimeo"></div>
-            </a>
-            <a href="#">
-                <div class="fui-facebook"></div>
-                <div class="fui-facebook"></div>
-            </a>
-            <a href="#">
-                <div class="fui-twitter"></div>
-                <div class="fui-twitter"></div>
-            </a>
-        </div>
-
-    </div>
-</footer>            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="static/js/jquery-1.10.2.min.js"></script>
-            <script src="static/js/jquery.bxslider.min.js"></script>
-            <script src="static/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-            <script src="static/js/jquery.sharrre.min.js"></script>
-            <script src="static/js/bootstrap.min.js"></script>
-            <script src="static/js/masonry.pkgd.min.js"></script>
-            <script src="static/js/modernizr.custom.js"></script>
-            <script src="static/js/page-transitions.js"></script>
-            <script src="static/js/easing.min.js"></script>
-            <script src="static/js/jquery.svg.js"></script>
-            <script src="static/js/jquery.svganim.js"></script>
-            <script src="static/js/jquery.backgroundvideo.min.js"></script>
-            <script src="static/js/froogaloop.min.js"></script>
-            <script src="static/js/startup-kit.js"></script>
-        </div>
-    </body>
+         </footer>
+         <!-- Placed at the end of the document so the pages load faster -->
+         <script src="static/js/jquery-1.10.2.min.js"></script>
+         <script src="static/js/jquery.bxslider.min.js"></script>
+         <script src="static/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+         <script src="static/js/jquery.sharrre.min.js"></script>
+         <script src="static/js/bootstrap.min.js"></script>
+         <script src="static/js/masonry.pkgd.min.js"></script>
+         <script src="static/js/modernizr.custom.js"></script>
+         <script src="static/js/page-transitions.js"></script>
+         <script src="static/js/easing.min.js"></script>
+         <script src="static/js/jquery.svg.js"></script>
+         <script src="static/js/jquery.svganim.js"></script>
+         <script src="static/js/jquery.backgroundvideo.min.js"></script>
+         <script src="static/js/froogaloop.min.js"></script>
+         <script src="static/js/startup-kit.js"></script>
+      </div>
+   </body>
 </html>
